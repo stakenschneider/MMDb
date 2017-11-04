@@ -1,5 +1,6 @@
 import com.github.javafaker.Faker;
 import java.util.List;
+import static java.lang.Math.abs;
 
 public class Generator {
 
@@ -9,6 +10,11 @@ public class Generator {
 
     public Generator(Inserts inserts) {
         this.inserts = inserts;
+        try {
+            select = new Select("jdbc:postgresql://localhost:5432/postgres");
+        } catch (Exception ex) {
+            System.out.print("");
+        }
     }
 
     private String randString(int number) {
@@ -28,7 +34,7 @@ public class Generator {
         return ((int)(2017 - Math.random() * 100));
     }
 
-    private double randomRating(){ return Math.random()*10-1; }
+    private double randomRating(){ return abs(Math.random()*10-1); }
 
     private long randNumFromArray(long [] array) {
         return array[randNumber(array.length)];
@@ -42,15 +48,19 @@ public class Generator {
 
     public void fillActors(int num) {
         for(int i = 0; i < num; i++) {
-
             inserts.insertActors(faker.name().firstName() , faker.name().lastName());
         }
     }
 
+    public void fillDirectors(int num) {
+        for(int i = 0; i < num; i++) {
+            inserts.insertDirectors(faker.name().firstName() , faker.name().lastName());
+        }
+    }
+
     public void fillMovieGenres(int number) {
-        //TODO: NullPointerException :)
-        List<Movie> movies = select.getMovie(); //bel
-        List<Genres> genres = select.getGenre(); //dish
+        List<Movie> movies = select.getMovie();
+        List<Genres> genres = select.getGenre();
 
         long[] movieID = new long[movies.size()];
         for (int i = 0; i < movies.size(); i++) {
@@ -63,8 +73,45 @@ public class Generator {
         }
 
         for(int i = 0; i < number; i++) {
-            inserts.insertMovieGenres(this.randNumFromArray(genresID), this.randNumFromArray(movieID));
+            inserts.insertMovieGenres(this.randNumFromArray(movieID), this.randNumFromArray(genresID));
         }
     }
 
+    public void fillMovieActors(int number) {
+        List<Movie> movies = select.getMovie();
+        List<Actors> actors = select.getActor();
+
+        long[] movieID = new long[movies.size()];
+        for (int i = 0; i < movies.size(); i++) {
+            movieID[i] = movies.get(i).movieID;
+        }
+
+        long[] actorID = new long[actors.size()];
+        for (int i = 0; i < actors.size(); i++) {
+            actorID[i] = actors.get(i).actorsID;
+        }
+
+        for(int i = 0; i < number; i++) {
+            inserts.insertMovieActors(this.randNumFromArray(movieID), this.randNumFromArray(actorID));
+        }
+    }
+
+    public void fillMovieDirectors(int number) {
+        List<Movie> movies = select.getMovie();
+        List<Directors> directors = select.getDirectors();
+
+        long[] movieID = new long[movies.size()];
+        for (int i = 0; i < movies.size(); i++) {
+            movieID[i] = movies.get(i).movieID;
+        }
+
+        long[] directorID = new long[directors.size()];
+        for (int i = 0; i < directors.size(); i++) {
+            directorID[i] = directors.get(i).directorID;
+        }
+
+        for(int i = 0; i < number; i++) {
+            inserts.insertMovieDirectors(this.randNumFromArray(movieID), this.randNumFromArray(directorID));
+        }
+    }
 }

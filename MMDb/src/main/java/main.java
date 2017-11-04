@@ -1,5 +1,4 @@
 import java.sql.SQLException;
-import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
@@ -8,11 +7,13 @@ public class main {
         Inserts inserts = new Inserts(url);
         Generator generator = new Generator(inserts);
 
-//        generator.fillMovie(4);
-//        generator.fillActors(7);
-        generator.fillMovieGenres(3);
+        generator.fillMovie(50);
+        generator.fillActors(83);
+        generator.fillDirectors(50);
 
-
+        generator.fillMovieGenres(10);
+        generator.fillMovieActors(90);
+        generator.fillMovieDirectors(20);
     }
 }
 
