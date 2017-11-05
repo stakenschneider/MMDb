@@ -1,13 +1,13 @@
 import java.util.Date;
 
 public class Actors {
-    long actorsID;
+    long ID;
     String firstName;
     String lastName;
     Date birth;
 
-    public Actors(long actorsID, String firstName, String lastName, Date birth) {
-        this.actorsID = actorsID;
+    public Actors(long ID, String firstName, String lastName, Date birth) {
+        this.ID = ID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.birth = birth;
@@ -15,6 +15,6 @@ public class Actors {
 
     @Override
     public String toString() {
-        return String.valueOf(actorsID);
+        return String.valueOf(ID);
     }
 }

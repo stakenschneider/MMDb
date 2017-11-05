@@ -1,13 +1,13 @@
 import java.util.Date;
 
 public class Directors {
-    long directorID;
+    long ID;
     String firstName;
     String lastName;
     Date birth;
 
     public Directors(long directorID, String firstName, String lastName, Date birth) {
-        this.directorID = directorID;
+        this.ID = directorID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.birth = birth;
@@ -15,6 +15,6 @@ public class Directors {
 
     @Override
     public String toString() {
-        return String.valueOf(directorID);
+        return String.valueOf(ID);
     }
 }

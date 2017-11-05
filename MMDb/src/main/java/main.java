@@ -1,19 +1,21 @@
 import java.sql.SQLException;
 
 public class main {
+
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         String url = "jdbc:postgresql://localhost:5432/postgres";
 
         Inserts inserts = new Inserts(url);
         Generator generator = new Generator(inserts);
 
-        generator.fillMovie(50);
-        generator.fillActors(83);
-        generator.fillDirectors(50);
+        generator.fillMovie(100);
 
-        generator.fillMovieGenres(10);
-        generator.fillMovieActors(90);
-        generator.fillMovieDirectors(20);
+        generator.fillPeople(100, "Actors");
+        generator.fillPeople(100, "Directors");
+
+        generator.fill_many2many(170, "Genres");
+        generator.fill_many2many(500, "Actors");
+        generator.fill_many2many(120, "Directors");
     }
 }
 

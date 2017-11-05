@@ -1,15 +1,15 @@
 public class Genres {
-    long genresID;
+    long ID;
     String name;
 
-    public Genres(long genresID, String name) {
-        this.genresID = genresID;
+    public Genres(long ID, String name) {
+        this.ID = ID;
         this.name = name;
     }
 
     @Override
     public String toString() {
-        return String.valueOf(genresID);
+        return String.valueOf(ID);
     }
 
 }

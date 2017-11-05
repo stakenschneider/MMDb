@@ -42,8 +42,7 @@ public class Select {
                             resultSet.getInt("releaseYear"),
                             resultSet.getDouble("rating"),
                             resultSet.getInt("movieLength"),
-                            resultSet.getString("description"),
-                            resultSet.getString("tagLine")
+                            resultSet.getString("description")
                     );
                     movies.add(movie);
                 }

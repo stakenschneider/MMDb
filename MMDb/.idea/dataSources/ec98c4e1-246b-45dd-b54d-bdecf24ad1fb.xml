@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="postgres@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.4">
+    <root id="1"/>
+    <database id="2" parent="1" name="postgres">
+      <ObjectId>13255</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-11-05.17:20:37.704</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1352</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="4" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="5" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="6" parent="2" name="pg_temp_1">
+      <ObjectId>11736</ObjectId>
+    </schema>
+    <schema id="7" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11737</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="information_schema">
+      <ObjectId>12965</ObjectId>
+    </schema>
+    <sequence id="9" parent="3" name="actors_actorid_seq">
+      <ObjectId>24891</ObjectId>
+      <StateNumber>851</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="10" parent="3" name="directors_directorsid_seq">
+      <ObjectId>24945</ObjectId>
+      <StateNumber>871</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="11" parent="3" name="genres_genreid_seq">
+      <ObjectId>16435</ObjectId>
+      <StateNumber>574</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="12" parent="3" name="imagines_imaginesid_seq">
+      <ObjectId>24990</ObjectId>
+      <StateNumber>885</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="13" parent="3" name="movie_movieid_seq">
+      <ObjectId>24848</ObjectId>
+      <StateNumber>749</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="14" parent="3" name="movieactors_actorid_seq">
+      <ObjectId>24909</ObjectId>
+      <StateNumber>859</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="15" parent="3" name="movieactors_movieactors_seq">
+      <ObjectId>24905</ObjectId>
+      <StateNumber>859</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="16" parent="3" name="movieactors_movieid_seq">
+      <ObjectId>24907</ObjectId>
+      <StateNumber>859</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="17" parent="3" name="moviedirectors_directorid_seq">
+      <ObjectId>24934</ObjectId>
+      <StateNumber>867</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="18" parent="3" name="moviedirectors_moviedirectorsid_seq">
+      <ObjectId>24930</ObjectId>
+      <StateNumber>867</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="19" parent="3" name="moviedirectors_movieid_seq">
+      <ObjectId>24932</ObjectId>
+      <StateNumber>867</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="20" parent="3" name="moviegenres_genreid_seq">
+      <ObjectId>24968</ObjectId>
+      <StateNumber>878</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="21" parent="3" name="moviegenres_moviegenres_seq">
+      <ObjectId>24964</ObjectId>
+      <StateNumber>878</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="22" parent="3" name="moviegenres_movieid_seq">
+      <ObjectId>24966</ObjectId>
+      <StateNumber>878</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <table id="23" parent="3" name="actors">
+      <ObjectId>24893</ObjectId>
+      <StateNumber>1350</StateNumber>
+    </table>
+    <table id="24" parent="3" name="directors">
+      <ObjectId>24947</ObjectId>
+      <StateNumber>1346</StateNumber>
+    </table>
+    <table id="25" parent="3" name="genres">
+      <ObjectId>16437</ObjectId>
+      <StateNumber>1335</StateNumber>
+    </table>
+    <table id="26" parent="3" name="imagines">
+      <ObjectId>24992</ObjectId>
+      <StateNumber>885</StateNumber>
+    </table>
+    <table id="27" parent="3" name="movie">
+      <ObjectId>24839</ObjectId>
+      <StateNumber>1352</StateNumber>
+    </table>
+    <table id="28" parent="3" name="movieactors">
+      <ObjectId>24911</ObjectId>
+      <StateNumber>1352</StateNumber>
+    </table>
+    <table id="29" parent="3" name="moviedirectors">
+      <ObjectId>24936</ObjectId>
+      <StateNumber>1348</StateNumber>
+    </table>
+    <table id="30" parent="3" name="moviegenres">
+      <ObjectId>24970</ObjectId>
+      <StateNumber>1343</StateNumber>
+    </table>
+    <column id="31" parent="23" name="actorid">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>851</StateNumber>
+      <SequenceName>actors_actorid_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;actors_actorid_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="32" parent="23" name="firstname">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>851</StateNumber>
+    </column>
+    <column id="33" parent="23" name="lastname">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <StateNumber>851</StateNumber>
+    </column>
+    <column id="34" parent="23" name="birth">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+      <StateNumber>851</StateNumber>
+    </column>
+    <index id="35" parent="23" name="actors_actorid_uindex">
+      <ObjectId>24899</ObjectId>
+      <ColNames>actorid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="36" parent="23" name="actors_pkey">
+      <ObjectId>24897</ObjectId>
+      <ColNames>actorid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="37" parent="23" name="actors_pkey">
+      <ObjectId>24898</ObjectId>
+      <ColNames>actorid</ColNames>
+      <UnderlyingIndexName>actors_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="38" parent="24" name="directorsid">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>871</StateNumber>
+      <SequenceName>directors_directorsid_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;directors_directorsid_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="39" parent="24" name="firstname">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>871</StateNumber>
+    </column>
+    <column id="40" parent="24" name="lastname">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <StateNumber>871</StateNumber>
+    </column>
+    <column id="41" parent="24" name="birth">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+      <StateNumber>871</StateNumber>
+    </column>
+    <index id="42" parent="24" name="directors_directorsid_uindex">
+      <ObjectId>24953</ObjectId>
+      <ColNames>directorsid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="43" parent="24" name="directors_pkey">
+      <ObjectId>24951</ObjectId>
+      <ColNames>directorsid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="44" parent="24" name="directors_pkey">
+      <ObjectId>24952</ObjectId>
+      <ColNames>directorsid</ColNames>
+      <UnderlyingIndexName>directors_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="45" parent="25" name="genreid">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>574</StateNumber>
+      <SequenceName>genres_genreid_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;genres_genreid_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="46" parent="25" name="genrename">
+      <Position>2</Position>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>574</StateNumber>
+    </column>
+    <index id="47" parent="25" name="genres_genreid_uindex">
+      <ObjectId>16443</ObjectId>
+      <ColNames>genreid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="48" parent="25" name="genres_pkey">
+      <ObjectId>16441</ObjectId>
+      <ColNames>genreid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="49" parent="25" name="genres_genrename_uindex">
+      <ObjectId>16444</ObjectId>
+      <ColNames>genrename</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="50" parent="25" name="genres_pkey">
+      <ObjectId>16442</ObjectId>
+      <ColNames>genreid</ColNames>
+      <UnderlyingIndexName>genres_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="51" parent="26" name="imaginesid">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>885</StateNumber>
+      <SequenceName>imagines_imaginesid_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;imagines_imaginesid_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="52" parent="26" name="imgine">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>885</StateNumber>
+    </column>
+    <index id="53" parent="26" name="imagines_imaginesid_uindex">
+      <ObjectId>25001</ObjectId>
+      <ColNames>imaginesid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="54" parent="26" name="imagines_pkey">
+      <ObjectId>24999</ObjectId>
+      <ColNames>imaginesid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="55" parent="26" name="imagines_pkey">
+      <ObjectId>25000</ObjectId>
+      <ColNames>imaginesid</ColNames>
+      <UnderlyingIndexName>imagines_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="56" parent="27" name="movieid">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>750</StateNumber>
+      <SequenceName>movie_movieid_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;movie_movieid_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="57" parent="27" name="name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>748</StateNumber>
+    </column>
+    <column id="58" parent="27" name="releaseyear">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>748</StateNumber>
+    </column>
+    <column id="59" parent="27" name="rating">
+      <Position>4</Position>
+      <DataType>numeric|0</DataType>
+      <StateNumber>748</StateNumber>
+    </column>
+    <column id="60" parent="27" name="movielength">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>754</StateNumber>
+    </column>
+    <column id="61" parent="27" name="description">
+      <Position>6</Position>
+      <DataType>varchar(300)|0</DataType>
+      <StateNumber>748</StateNumber>
+    </column>
+    <column id="62" parent="27" name="tagline">
+      <Position>7</Position>
+      <DataType>varchar(150)|0</DataType>
+      <StateNumber>748</StateNumber>
+    </column>
+    <index id="63" parent="27" name="movie_pkey">
+      <ObjectId>24846</ObjectId>
+      <ColNames>movieid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="64" parent="27" name="movie_pkey">
+      <ObjectId>24847</ObjectId>
+      <ColNames>movieid</ColNames>
+      <UnderlyingIndexName>movie_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="65" parent="28" name="movieactorsid">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>863</StateNumber>
+      <SequenceName>movieactors_movieactors_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;movieactors_movieactors_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="66" parent="28" name="movieid">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>859</StateNumber>
+      <SequenceName>movieactors_movieid_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;movieactors_movieid_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="67" parent="28" name="actorid">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>859</StateNumber>
+      <SequenceName>movieactors_actorid_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;movieactors_actorid_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <index id="68" parent="28" name="movieactors_movieactors_uindex">
+      <ObjectId>24919</ObjectId>
+      <ColNames>movieactorsid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="69" parent="28" name="movieactors_pkey">
+      <ObjectId>24917</ObjectId>
+      <ColNames>movieactorsid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="70" parent="28" name="movieactors_pkey">
+      <ObjectId>24918</ObjectId>
+      <ColNames>movieactorsid</ColNames>
+      <UnderlyingIndexName>movieactors_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="71" parent="28" name="movieactors_movie_movieid_fk">
+      <ObjectId>25035</ObjectId>
+      <ColNames>movieid</ColNames>
+      <RefTableId>24839</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>movie</RefTableName>
+      <RefKeyName>movie_pkey</RefKeyName>
+      <RefColNames>movieid</RefColNames>
+    </foreign-key>
+    <foreign-key id="72" parent="28" name="movieactors_actors_actorid_fk">
+      <ObjectId>25030</ObjectId>
+      <ColNames>actorid</ColNames>
+      <RefTableId>24893</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>actors</RefTableName>
+      <RefKeyName>actors_pkey</RefKeyName>
+      <RefColNames>actorid</RefColNames>
+    </foreign-key>
+    <column id="73" parent="29" name="moviedirectorsid">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>867</StateNumber>
+      <SequenceName>moviedirectors_moviedirectorsid_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;moviedirectors_moviedirectorsid_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="74" parent="29" name="movieid">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>867</StateNumber>
+      <SequenceName>moviedirectors_movieid_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;moviedirectors_movieid_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="75" parent="29" name="directorid">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>867</StateNumber>
+      <SequenceName>moviedirectors_directorid_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;moviedirectors_directorid_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <index id="76" parent="29" name="moviedirectors_moviedirectorsid_uindex">
+      <ObjectId>24944</ObjectId>
+      <ColNames>moviedirectorsid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="77" parent="29" name="moviedirectors_pkey">
+      <ObjectId>24942</ObjectId>
+      <ColNames>moviedirectorsid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="78" parent="29" name="moviedirectors_pkey">
+      <ObjectId>24943</ObjectId>
+      <ColNames>moviedirectorsid</ColNames>
+      <UnderlyingIndexName>moviedirectors_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="79" parent="29" name="moviedirectors_movie_movieid_fk">
+      <ObjectId>25025</ObjectId>
+      <ColNames>movieid</ColNames>
+      <RefTableId>24839</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>movie</RefTableName>
+      <RefKeyName>movie_pkey</RefKeyName>
+      <RefColNames>movieid</RefColNames>
+    </foreign-key>
+    <foreign-key id="80" parent="29" name="moviedirectors_directors_directorsid_fk">
+      <ObjectId>25020</ObjectId>
+      <ColNames>directorid</ColNames>
+      <RefTableId>24947</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>directors</RefTableName>
+      <RefKeyName>directors_pkey</RefKeyName>
+      <RefColNames>directorsid</RefColNames>
+    </foreign-key>
+    <column id="81" parent="30" name="moviegenres">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>878</StateNumber>
+      <SequenceName>moviegenres_moviegenres_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;moviegenres_moviegenres_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="82" parent="30" name="movieid">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>878</StateNumber>
+      <SequenceName>moviegenres_movieid_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;moviegenres_movieid_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="83" parent="30" name="genreid">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>878</StateNumber>
+      <SequenceName>moviegenres_genreid_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;moviegenres_genreid_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <index id="84" parent="30" name="moviegenres_moviegenres_uindex">
+      <ObjectId>24988</ObjectId>
+      <ColNames>moviegenres</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="85" parent="30" name="moviegenres_pkey">
+      <ObjectId>24976</ObjectId>
+      <ColNames>moviegenres</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="86" parent="30" name="moviegenres_pkey">
+      <ObjectId>24977</ObjectId>
+      <ColNames>moviegenres</ColNames>
+      <UnderlyingIndexName>moviegenres_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="87" parent="30" name="moviegenres_movie_movieid_fk">
+      <ObjectId>25015</ObjectId>
+      <ColNames>movieid</ColNames>
+      <RefTableId>24839</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>movie</RefTableName>
+      <RefKeyName>movie_pkey</RefKeyName>
+      <RefColNames>movieid</RefColNames>
+    </foreign-key>
+    <foreign-key id="88" parent="30" name="moviegenres_genres_genreid_fk">
+      <ObjectId>25010</ObjectId>
+      <ColNames>genreid</ColNames>
+      <RefTableId>16437</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>genres</RefTableName>
+      <RefKeyName>genres_pkey</RefKeyName>
+      <RefColNames>genreid</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>
