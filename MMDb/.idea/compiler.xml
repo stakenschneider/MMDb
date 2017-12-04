@@ -11,8 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="IMDb" target="1.8" />
-      <module name="MMDb" target="1.5" />
+      <module name="MMDb" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
