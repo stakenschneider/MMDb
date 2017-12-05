@@ -60,39 +60,55 @@ public class Generator {
         }
     }
 
-    public void fillPeople(int num, String str) {
+    public void fillPeople(int num) {
         for(int i = 0; i < num; i++) {
             Random rnd = new Random();
             long ms = -946771200000L + (Math.abs(rnd.nextLong()) % (70L * 365 * 24 * 60 * 60 * 1000));
-            inserts.insertPeople(faker.name().firstName() , faker.name().lastName() , new Date(ms), str);
+            inserts.insertPeople(faker.name().firstName() , faker.name().lastName() , new Date(ms));
         }
     }
 
 
     public void fill_many2many(int number, String str) {
-        List<Actors> actors = select.getActor();
-        List<Directors> directors = select.getDirectors();
-        List<Genres> genres = select.getGenre();
         List<Movie> movies = select.getMovie();
+        List<People> people = select.getPeople();
+        List<Genres> genres = select.getGenre();
+        List<Awards> awards = select.getAwards();
+
+        List<Profession> professions = select.getProfession();
+
+        long[] firstID = new long[movies.size()];
         long[] secondID = new long[0];
 
-        long[] movieID = new long[movies.size()];
-        for (int i = 0; i < movies.size(); i++) {
-            movieID[i] = movies.get(i).movieID;
-        }
 
-        if (str.equals("Actors"))
-        {
-            secondID = new long[actors.size()];
-            for (int i = 0; i < actors.size(); i++) {
-                secondID[i] = actors.get(i).ID;
+        if (str.equals("People")) {
+            secondID = new long[people.size()];
+            for (int i = 0; i < people.size(); i++) {
+                secondID[i] = people.get(i).ID;
             }
+
+            for (int i = 0; i < movies.size(); i++)
+                firstID[i] = movies.get(i).movieID;
         }
 
-        if (str.equals("Directors")){
-            secondID = new long[directors.size()];
-            for (int i = 0; i < directors.size(); i++) {
-                secondID[i] = directors.get(i).ID;
+        if (str.equals("Awards")){
+            secondID = new long[awards.size()];
+            for (int i = 0; i < awards.size(); i++) {
+                secondID[i] = awards.get(i).ID;
+            }
+
+            for (int i = 0; i < movies.size(); i++)
+                firstID[i] = movies.get(i).movieID;
+        }
+
+        if (str.equals("Profession")){
+            secondID = new long[professions.size()];
+            for (int i = 0; i < professions.size(); i++) {
+                secondID[i] = professions.get(i).ID;
+            }
+
+            for (int i = 0; i < people.size(); i++) {
+                firstID[i] = people.get(i).ID;
             }
         }
 
@@ -101,10 +117,24 @@ public class Generator {
             for (int i = 0; i < genres.size(); i++) {
                 secondID[i] = genres.get(i).ID;
             }
+
+            for (int i = 0; i < movies.size(); i++)
+                firstID[i] = movies.get(i).movieID;
+        }
+
+        if (str.equals("PA")){
+            secondID = new long[awards.size()];
+            for (int i = 0; i < awards.size(); i++) {
+                secondID[i] = awards.get(i).ID;
+            }
+
+            for (int i = 0; i < people.size(); i++) {
+                firstID[i] = people.get(i).ID;
+            }
         }
 
         for(int i = 0; i < number; i++) {
-            inserts.insert_many2many(this.randNumFromArray(movieID), this.randNumFromArray(secondID), str);
+            inserts.insert_many2many(this.randNumFromArray(firstID), this.randNumFromArray(secondID), str);
         }
 
     }

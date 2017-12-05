@@ -47,25 +47,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Movie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-              <folding>
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#494#495#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -73,49 +60,9 @@
       <file leaf-file-name="Generator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Generator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1395">
-              <caret line="106" column="103" lean-forward="false" selection-start-line="106" selection-start-column="103" selection-end-line="106" selection-end-column="103" />
+            <state relative-caret-position="883">
+              <caret line="125" column="38" lean-forward="false" selection-start-line="125" selection-start-column="38" selection-end-line="125" selection-end-column="38" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Directors.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Directors.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-              <folding>
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#428#429#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Actors.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Actors.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Select.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Select.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1740">
-              <caret line="118" column="5" lean-forward="false" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1510914707000" expanded="true" signature="187:232" ph="SELECT * fro... moviegenres" />
-                <marker date="1510914707000" expanded="true" signature="276:295" ph="SELECT * fro... movie" />
-                <marker date="1510914707000" expanded="true" signature="340:360" ph="SELECT * fro... genres" />
-                <marker date="1510914707000" expanded="true" signature="405:425" ph="SELECT * fro... actors" />
-                <marker date="1510914707000" expanded="true" signature="473:496" ph="SELECT * fro... directors" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -123,27 +70,54 @@
       <file leaf-file-name="Inserts.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Inserts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="69" column="19" lean-forward="false" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+            <state relative-caret-position="240">
+              <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1509896238000" expanded="true" signature="149:243" ph="INSERT INTO Recipes... " />
-                <marker date="1509896238000" expanded="true" signature="290:357" ph="INSERT INTO directors... " />
-                <marker date="1509896238000" expanded="true" signature="401:465" ph="INSERT INTO actors... " />
-                <marker date="1509896238000" expanded="true" signature="517:579" ph="INSERT INTO moviedirectors... " />
-                <marker date="1509896238000" expanded="true" signature="628:684" ph="INSERT INTO moviegenres... " />
-                <marker date="1509896238000" expanded="true" signature="733:789" ph="INSERT INTO movieactors... " />
+                <marker date="1512515008596" expanded="true" signature="162:256" ph="INSERT INTO movie... " />
+                <marker date="1512515008596" expanded="true" signature="304:368" ph="INSERT INTO people... " />
+                <marker date="1512515008596" expanded="true" signature="422:478" ph="INSERT INTO moviegenres... " />
+                <marker date="1512515008596" expanded="true" signature="531:588" ph="INSERT INTO moviepeople... " />
+                <marker date="1512515008596" expanded="true" signature="641:697" ph="INSERT INTO moviepeople... " />
+                <marker date="1512515008596" expanded="true" signature="755:822" ph="INSERT INTO peopleprofession... " />
+                <marker date="1512515008596" expanded="true" signature="876:935" ph="INSERT INTO peopleprofession... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Genres.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Genres.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-              <folding />
+      <file leaf-file-name="peopleawards" pinned="false" current-in-tab="false">
+        <entry file="das://table:/262dd21d/ec98c4e1-246b-45dd-b54d-bdecf24ad1fb/postgres.public.peopleawards">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="moviepeople" pinned="false" current-in-tab="false">
+        <entry file="das://table:/262dd21d/ec98c4e1-246b-45dd-b54d-bdecf24ad1fb/postgres.public.moviepeople">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="moviegenres" pinned="false" current-in-tab="false">
+        <entry file="das://table:/262dd21d/ec98c4e1-246b-45dd-b54d-bdecf24ad1fb/postgres.public.moviegenres">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movieawards" pinned="false" current-in-tab="true">
+        <entry file="das://table:/262dd21d/ec98c4e1-246b-45dd-b54d-bdecf24ad1fb/postgres.public.movieawards">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -178,11 +152,14 @@
         <option value="$PROJECT_DIR$/src/main/java/Actors.java" />
         <option value="$PROJECT_DIR$/src/main/java/Directors.java" />
         <option value="$PROJECT_DIR$/src/main/java/Genres.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Movie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/People.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Profession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Awards.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Select.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Inserts.java" />
         <option value="$PROJECT_DIR$/src/main/java/Generator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Select.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Movie.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main.java" />
       </list>
     </option>
   </component>
@@ -203,7 +180,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="91" />
     <option name="height" value="900" />
   </component>
@@ -222,8 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,8 +228,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -416,11 +393,12 @@
       <workItem from="1510906901565" duration="273000" />
       <workItem from="1510907545460" duration="1783000" />
       <workItem from="1512410239604" duration="408000" />
+      <workItem from="1512511816581" duration="3316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28001000" />
+    <option name="totallyTimeSpent" value="31317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -432,21 +410,21 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4171705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4171705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20958512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14663805" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22460657" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39950064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39950064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -468,128 +446,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="39" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Actors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Inserts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="90" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1509896238000" expanded="true" signature="149:243" ph="INSERT INTO Recipes... " />
-            <marker date="1509896238000" expanded="true" signature="290:357" ph="INSERT INTO directors... " />
-            <marker date="1509896238000" expanded="true" signature="401:465" ph="INSERT INTO actors... " />
-            <marker date="1509896238000" expanded="true" signature="517:579" ph="INSERT INTO moviedirectors... " />
-            <marker date="1509896238000" expanded="true" signature="628:684" ph="INSERT INTO moviegenres... " />
-            <marker date="1509896238000" expanded="true" signature="733:789" ph="INSERT INTO movieactors... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Genres.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Select.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="117" column="5" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="117" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1510914707000" expanded="true" signature="187:232" ph="SELECT * fro... moviegenres" />
-            <marker date="1510914707000" expanded="true" signature="276:295" ph="SELECT * fro... movie" />
-            <marker date="1510914707000" expanded="true" signature="340:360" ph="SELECT * fro... genres" />
-            <marker date="1510914707000" expanded="true" signature="405:425" ph="SELECT * fro... actors" />
-            <marker date="1510914707000" expanded="true" signature="473:496" ph="SELECT * fro... directors" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Inserts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="36" column="99" lean-forward="false" selection-start-line="36" selection-start-column="99" selection-end-line="36" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1509896238000" expanded="true" signature="149:243" ph="INSERT INTO Recipes... " />
-            <marker date="1509896238000" expanded="true" signature="290:357" ph="INSERT INTO directors... " />
-            <marker date="1509896238000" expanded="true" signature="401:465" ph="INSERT INTO actors... " />
-            <marker date="1509896238000" expanded="true" signature="517:579" ph="INSERT INTO moviedirectors... " />
-            <marker date="1509896238000" expanded="true" signature="628:684" ph="INSERT INTO moviegenres... " />
-            <marker date="1509896238000" expanded="true" signature="733:789" ph="INSERT INTO movieactors... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Genres.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -619,11 +475,13 @@
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1510914707000" expanded="true" signature="187:232" ph="SELECT * fro... moviegenres" />
-            <marker date="1510914707000" expanded="true" signature="276:295" ph="SELECT * fro... movie" />
-            <marker date="1510914707000" expanded="true" signature="340:360" ph="SELECT * fro... genres" />
-            <marker date="1510914707000" expanded="true" signature="405:425" ph="SELECT * fro... actors" />
-            <marker date="1510914707000" expanded="true" signature="473:496" ph="SELECT * fro... directors" />
+            <marker date="1512514082499" expanded="true" signature="187:232" ph="SELECT * fro... moviegenres" />
+            <marker date="1512514082499" expanded="true" signature="276:295" ph="SELECT * fro... movie" />
+            <marker date="1512514082499" expanded="true" signature="340:360" ph="SELECT * fro... genres" />
+            <marker date="1512514082499" expanded="true" signature="405:419" ph="SELECT * fro... actors" />
+            <marker date="1512514082499" expanded="true" signature="405:425" ph="SELECT * fro... people" />
+            <marker date="1512514082499" expanded="true" signature="474:498" ph="SELECT * fro... profession" />
+            <marker date="1512514082499" expanded="true" signature="543:563" ph="SELECT * fro... awards" />
           </folding>
         </state>
       </provider>
@@ -642,12 +500,13 @@
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1509896238000" expanded="true" signature="149:243" ph="INSERT INTO Recipes... " />
-            <marker date="1509896238000" expanded="true" signature="290:357" ph="INSERT INTO directors... " />
-            <marker date="1509896238000" expanded="true" signature="401:465" ph="INSERT INTO actors... " />
-            <marker date="1509896238000" expanded="true" signature="517:579" ph="INSERT INTO moviedirectors... " />
-            <marker date="1509896238000" expanded="true" signature="628:684" ph="INSERT INTO moviegenres... " />
-            <marker date="1509896238000" expanded="true" signature="733:789" ph="INSERT INTO movieactors... " />
+            <marker date="1512515008596" expanded="true" signature="162:256" ph="INSERT INTO movie... " />
+            <marker date="1512515008596" expanded="true" signature="304:368" ph="INSERT INTO people... " />
+            <marker date="1512515008596" expanded="true" signature="422:478" ph="INSERT INTO moviegenres... " />
+            <marker date="1512515008596" expanded="true" signature="531:588" ph="INSERT INTO moviepeople... " />
+            <marker date="1512515008596" expanded="true" signature="641:697" ph="INSERT INTO moviepeople... " />
+            <marker date="1512515008596" expanded="true" signature="755:822" ph="INSERT INTO peopleprofession... " />
+            <marker date="1512515008596" expanded="true" signature="876:935" ph="INSERT INTO peopleprofession... " />
           </folding>
         </state>
       </provider>
@@ -666,12 +525,13 @@
           <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1509896238000" expanded="true" signature="149:243" ph="INSERT INTO Recipes... " />
-            <marker date="1509896238000" expanded="true" signature="290:357" ph="INSERT INTO directors... " />
-            <marker date="1509896238000" expanded="true" signature="401:465" ph="INSERT INTO actors... " />
-            <marker date="1509896238000" expanded="true" signature="517:579" ph="INSERT INTO moviedirectors... " />
-            <marker date="1509896238000" expanded="true" signature="628:684" ph="INSERT INTO moviegenres... " />
-            <marker date="1509896238000" expanded="true" signature="733:789" ph="INSERT INTO movieactors... " />
+            <marker date="1512515008596" expanded="true" signature="162:256" ph="INSERT INTO movie... " />
+            <marker date="1512515008596" expanded="true" signature="304:368" ph="INSERT INTO people... " />
+            <marker date="1512515008596" expanded="true" signature="422:478" ph="INSERT INTO moviegenres... " />
+            <marker date="1512515008596" expanded="true" signature="531:588" ph="INSERT INTO moviepeople... " />
+            <marker date="1512515008596" expanded="true" signature="641:697" ph="INSERT INTO moviepeople... " />
+            <marker date="1512515008596" expanded="true" signature="755:822" ph="INSERT INTO peopleprofession... " />
+            <marker date="1512515008596" expanded="true" signature="876:935" ph="INSERT INTO peopleprofession... " />
           </folding>
         </state>
       </provider>
@@ -682,11 +542,13 @@
           <caret line="34" column="57" lean-forward="false" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1510914707000" expanded="true" signature="187:232" ph="SELECT * fro... moviegenres" />
-            <marker date="1510914707000" expanded="true" signature="276:295" ph="SELECT * fro... movie" />
-            <marker date="1510914707000" expanded="true" signature="340:360" ph="SELECT * fro... genres" />
-            <marker date="1510914707000" expanded="true" signature="405:425" ph="SELECT * fro... actors" />
-            <marker date="1510914707000" expanded="true" signature="473:496" ph="SELECT * fro... directors" />
+            <marker date="1512514082499" expanded="true" signature="187:232" ph="SELECT * fro... moviegenres" />
+            <marker date="1512514082499" expanded="true" signature="276:295" ph="SELECT * fro... movie" />
+            <marker date="1512514082499" expanded="true" signature="340:360" ph="SELECT * fro... genres" />
+            <marker date="1512514082499" expanded="true" signature="405:419" ph="SELECT * fro... actors" />
+            <marker date="1512514082499" expanded="true" signature="405:425" ph="SELECT * fro... people" />
+            <marker date="1512514082499" expanded="true" signature="474:498" ph="SELECT * fro... profession" />
+            <marker date="1512514082499" expanded="true" signature="543:563" ph="SELECT * fro... awards" />
           </folding>
         </state>
       </provider>
@@ -724,12 +586,13 @@
           <caret line="30" column="79" lean-forward="false" selection-start-line="30" selection-start-column="79" selection-end-line="30" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1509896238000" expanded="true" signature="149:243" ph="INSERT INTO Recipes... " />
-            <marker date="1509896238000" expanded="true" signature="290:357" ph="INSERT INTO directors... " />
-            <marker date="1509896238000" expanded="true" signature="401:465" ph="INSERT INTO actors... " />
-            <marker date="1509896238000" expanded="true" signature="517:579" ph="INSERT INTO moviedirectors... " />
-            <marker date="1509896238000" expanded="true" signature="628:684" ph="INSERT INTO moviegenres... " />
-            <marker date="1509896238000" expanded="true" signature="733:789" ph="INSERT INTO movieactors... " />
+            <marker date="1512515008596" expanded="true" signature="162:256" ph="INSERT INTO movie... " />
+            <marker date="1512515008596" expanded="true" signature="304:368" ph="INSERT INTO people... " />
+            <marker date="1512515008596" expanded="true" signature="422:478" ph="INSERT INTO moviegenres... " />
+            <marker date="1512515008596" expanded="true" signature="531:588" ph="INSERT INTO moviepeople... " />
+            <marker date="1512515008596" expanded="true" signature="641:697" ph="INSERT INTO moviepeople... " />
+            <marker date="1512515008596" expanded="true" signature="755:822" ph="INSERT INTO peopleprofession... " />
+            <marker date="1512515008596" expanded="true" signature="876:935" ph="INSERT INTO peopleprofession... " />
           </folding>
         </state>
       </provider>
@@ -768,11 +631,13 @@
           <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1510914707000" expanded="true" signature="187:232" ph="SELECT * fro... moviegenres" />
-            <marker date="1510914707000" expanded="true" signature="276:295" ph="SELECT * fro... movie" />
-            <marker date="1510914707000" expanded="true" signature="340:360" ph="SELECT * fro... genres" />
-            <marker date="1510914707000" expanded="true" signature="405:425" ph="SELECT * fro... actors" />
-            <marker date="1510914707000" expanded="true" signature="473:496" ph="SELECT * fro... directors" />
+            <marker date="1512514082499" expanded="true" signature="187:232" ph="SELECT * fro... moviegenres" />
+            <marker date="1512514082499" expanded="true" signature="276:295" ph="SELECT * fro... movie" />
+            <marker date="1512514082499" expanded="true" signature="340:360" ph="SELECT * fro... genres" />
+            <marker date="1512514082499" expanded="true" signature="405:419" ph="SELECT * fro... actors" />
+            <marker date="1512514082499" expanded="true" signature="405:425" ph="SELECT * fro... people" />
+            <marker date="1512514082499" expanded="true" signature="474:498" ph="SELECT * fro... profession" />
+            <marker date="1512514082499" expanded="true" signature="543:563" ph="SELECT * fro... awards" />
           </folding>
         </state>
       </provider>
@@ -810,12 +675,13 @@
           <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1509896238000" expanded="true" signature="149:243" ph="INSERT INTO Recipes... " />
-            <marker date="1509896238000" expanded="true" signature="290:357" ph="INSERT INTO directors... " />
-            <marker date="1509896238000" expanded="true" signature="401:465" ph="INSERT INTO actors... " />
-            <marker date="1509896238000" expanded="true" signature="517:579" ph="INSERT INTO moviedirectors... " />
-            <marker date="1509896238000" expanded="true" signature="628:684" ph="INSERT INTO moviegenres... " />
-            <marker date="1509896238000" expanded="true" signature="733:789" ph="INSERT INTO movieactors... " />
+            <marker date="1512515008596" expanded="true" signature="162:256" ph="INSERT INTO movie... " />
+            <marker date="1512515008596" expanded="true" signature="304:368" ph="INSERT INTO people... " />
+            <marker date="1512515008596" expanded="true" signature="422:478" ph="INSERT INTO moviegenres... " />
+            <marker date="1512515008596" expanded="true" signature="531:588" ph="INSERT INTO moviepeople... " />
+            <marker date="1512515008596" expanded="true" signature="641:697" ph="INSERT INTO moviepeople... " />
+            <marker date="1512515008596" expanded="true" signature="755:822" ph="INSERT INTO peopleprofession... " />
+            <marker date="1512515008596" expanded="true" signature="876:935" ph="INSERT INTO peopleprofession... " />
           </folding>
         </state>
       </provider>
@@ -845,10 +711,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/262dd21d/ec98c4e1-246b-45dd-b54d-bdecf24ad1fb/postgres.public.moviegenres">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="39" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Directors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Actors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Genres.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Profession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Awards.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding>
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -859,96 +777,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="das://table:/262dd21d/ec98c4e1-246b-45dd-b54d-bdecf24ad1fb/postgres.public.awards">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/262dd21d/ec98c4e1-246b-45dd-b54d-bdecf24ad1fb/postgres.public.genres">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/262dd21d/ec98c4e1-246b-45dd-b54d-bdecf24ad1fb/postgres.public.movie">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/262dd21d/ec98c4e1-246b-45dd-b54d-bdecf24ad1fb/postgres.public.people">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/People.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="39" selection-end-column="12" />
+        <state relative-caret-position="120">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/262dd21d/ec98c4e1-246b-45dd-b54d-bdecf24ad1fb/postgres.public.profession">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Select.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="118" column="5" lean-forward="false" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+        <state relative-caret-position="933">
+          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1510914707000" expanded="true" signature="187:232" ph="SELECT * fro... moviegenres" />
-            <marker date="1510914707000" expanded="true" signature="276:295" ph="SELECT * fro... movie" />
-            <marker date="1510914707000" expanded="true" signature="340:360" ph="SELECT * fro... genres" />
-            <marker date="1510914707000" expanded="true" signature="405:425" ph="SELECT * fro... actors" />
-            <marker date="1510914707000" expanded="true" signature="473:496" ph="SELECT * fro... directors" />
+            <marker date="1512514082499" expanded="true" signature="187:232" ph="SELECT * fro... moviegenres" />
+            <marker date="1512514082499" expanded="true" signature="276:295" ph="SELECT * fro... movie" />
+            <marker date="1512514082499" expanded="true" signature="340:360" ph="SELECT * fro... genres" />
+            <marker date="1512514082499" expanded="true" signature="405:419" ph="SELECT * fro... actors" />
+            <marker date="1512514082499" expanded="true" signature="405:425" ph="SELECT * fro... people" />
+            <marker date="1512514082499" expanded="true" signature="474:498" ph="SELECT * fro... profession" />
+            <marker date="1512514082499" expanded="true" signature="543:563" ph="SELECT * fro... awards" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Inserts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="69" column="19" lean-forward="false" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1509896238000" expanded="true" signature="149:243" ph="INSERT INTO Recipes... " />
-            <marker date="1509896238000" expanded="true" signature="290:357" ph="INSERT INTO directors... " />
-            <marker date="1509896238000" expanded="true" signature="401:465" ph="INSERT INTO actors... " />
-            <marker date="1509896238000" expanded="true" signature="517:579" ph="INSERT INTO moviedirectors... " />
-            <marker date="1509896238000" expanded="true" signature="628:684" ph="INSERT INTO moviegenres... " />
-            <marker date="1509896238000" expanded="true" signature="733:789" ph="INSERT INTO movieactors... " />
-          </folding>
+    <entry file="das://table:/262dd21d/ec98c4e1-246b-45dd-b54d-bdecf24ad1fb/postgres.public.peopleprofession">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Genres.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="106" column="103" lean-forward="false" selection-start-line="106" selection-start-column="103" selection-end-line="106" selection-end-column="103" />
+        <state relative-caret-position="883">
+          <caret line="125" column="38" lean-forward="false" selection-start-line="125" selection-start-column="38" selection-end-line="125" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Directors.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Inserts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1512515008596" expanded="true" signature="162:256" ph="INSERT INTO movie... " />
+            <marker date="1512515008596" expanded="true" signature="304:368" ph="INSERT INTO people... " />
+            <marker date="1512515008596" expanded="true" signature="422:478" ph="INSERT INTO moviegenres... " />
+            <marker date="1512515008596" expanded="true" signature="531:588" ph="INSERT INTO moviepeople... " />
+            <marker date="1512515008596" expanded="true" signature="641:697" ph="INSERT INTO moviepeople... " />
+            <marker date="1512515008596" expanded="true" signature="755:822" ph="INSERT INTO peopleprofession... " />
+            <marker date="1512515008596" expanded="true" signature="876:935" ph="INSERT INTO peopleprofession... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Actors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
+    <entry file="das://table:/262dd21d/ec98c4e1-246b-45dd-b54d-bdecf24ad1fb/postgres.public.peopleawards">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-          </folding>
+    <entry file="das://table:/262dd21d/ec98c4e1-246b-45dd-b54d-bdecf24ad1fb/postgres.public.moviepeople">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding />
+    <entry file="das://table:/262dd21d/ec98c4e1-246b-45dd-b54d-bdecf24ad1fb/postgres.public.moviegenres">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/262dd21d/ec98c4e1-246b-45dd-b54d-bdecf24ad1fb/postgres.public.movieawards">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>

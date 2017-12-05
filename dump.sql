@@ -148,3 +148,21 @@ references profession
 create unique index peopleprofession_peopleprofessionid_uindex
 on peopleprofession (peopleprofessionid)
 ;
+
+create table peopleawards
+(
+peopleawardsid serial not null
+constraint peopleawards_pkey
+primary key,
+peopleid serial not null
+constraint peopleawards_people_peopleid_fk
+references people,
+awardsid serial not null
+constraint peopleawards_awards_awardsid_fk
+references awards
+)
+;
+
+create unique index peopleawards_peopleawardsid_uindex
+on peopleawards (peopleawardsid)
+;

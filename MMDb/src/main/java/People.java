@@ -1,12 +1,12 @@
 import java.util.Date;
 
-public class Actors {
+public class People {
     long ID;
     String firstName;
     String lastName;
     Date birth;
 
-    public Actors(long ID, String firstName, String lastName, Date birth) {
+    public People(long ID, String firstName, String lastName, Date birth) {
         this.ID = ID;
         this.firstName = firstName;
         this.lastName = lastName;

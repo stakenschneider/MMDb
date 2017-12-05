@@ -9,14 +9,18 @@ public class Select {
         private final String getMovieGenres = "SELECT * from moviegenres WHERE movieid = (?)";
         private final String getMovie = "SELECT * from movie";
         private final String getGenres = "SELECT * from genres";
-        private final String getActors = "SELECT * from actors";
-        private final String getDirectots = "SELECT * from directors";
+        private final String getPeople = "SELECT * from people";
+        private final String getProfession = "SELECT * from profession";
+        private final String getAwards = "SELECT * from awards";
+
 
         private final PreparedStatement getMovieGenresStat;
         private final PreparedStatement getMovieStat;
         private final PreparedStatement getGenresStat;
-        private final PreparedStatement getActorsStat;
-        private final PreparedStatement getDirectorsStat;
+        private final PreparedStatement getPeopleStat;
+        private final PreparedStatement getProfessionStat;
+        private final PreparedStatement getAwardsStat;
+
 
         public Select (String url) throws ClassNotFoundException, SQLException {
             Class.forName("org.postgresql.Driver");
@@ -26,8 +30,9 @@ public class Select {
             getMovieGenresStat = connection.prepareStatement(getMovieGenres);
             getMovieStat = connection.prepareStatement(getMovie);
             getGenresStat = connection.prepareStatement(getGenres);
-            getActorsStat = connection.prepareStatement(getActors);
-            getDirectorsStat = connection.prepareStatement(getDirectots);
+            getPeopleStat = connection.prepareStatement(getPeople);
+            getProfessionStat = connection.prepareStatement(getProfession);
+            getAwardsStat = connection.prepareStatement(getAwards);
         }
 
         public List<Movie> getMovie(){
@@ -75,45 +80,65 @@ public class Select {
 
         }
 
-    public List<Actors> getActor(){
+    public List<People> getPeople(){
         try {
-            ResultSet resultSet = getActorsStat.executeQuery();
-            List<Actors> actors = new ArrayList();
+            ResultSet resultSet = getPeopleStat.executeQuery();
+            List<People> peoples = new ArrayList();
 
             while(resultSet.next()) {
-                Actors actor = new Actors(
-                        resultSet.getLong("actorID"),
+                People people = new People(
+                        resultSet.getLong("peopleID"),
                         resultSet.getString("firstName"),
                         resultSet.getString("lastName"),
                         resultSet.getDate("birth")
                 );
-                actors.add(actor);
+                peoples.add(people);
             }
-            return actors;
+            return peoples;
         } catch (SQLException e) {
             e.printStackTrace();
             return new ArrayList();
         }
     }
 
-    public List<Directors> getDirectors(){
+    public List<Awards> getAwards(){
         try {
-            ResultSet resultSet = getDirectorsStat.executeQuery();
-            List<Directors> directors = new ArrayList();
+            ResultSet resultSet = getAwardsStat.executeQuery();
+            List<Awards> awards = new ArrayList();
 
             while(resultSet.next()) {
-                Directors director = new Directors(
-                        resultSet.getLong("directorsID"),
-                        resultSet.getString("firstName"),
-                        resultSet.getString("lastName"),
-                        resultSet.getDate("birth")
+                Awards award = new Awards(
+                        resultSet.getLong("awardsID"),
+                        resultSet.getString("name")
                 );
-                directors.add(director);
+                awards.add(award);
             }
-            return directors;
+            return awards;
         } catch (SQLException e) {
             e.printStackTrace();
             return new ArrayList();
         }
     }
+
+    public List<Profession> getProfession(){
+        try {
+            ResultSet resultSet = getAwardsStat.executeQuery();
+            List<Profession> professions = new ArrayList();
+
+            while(resultSet.next()) {
+                Profession profession = new Profession(
+                        resultSet.getLong("professionID"),
+                        resultSet.getString("name")
+                );
+                professions.add(profession);
+            }
+            return professions;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return new ArrayList();
+        }
+    }
+
+
+
     }

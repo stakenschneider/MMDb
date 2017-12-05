@@ -2,38 +2,43 @@ import java.sql.*;
 import java.sql.Date;
 
 
-public class Inserts {
-
-    private final Connection connection;
-
-    private final String insertMovie = "INSERT INTO movie (name, releaseyear, rating, movielength, description) VALUES (?, ?, ?, ?, ?)";
-    private final String insertDirectors = "INSERT INTO directors (firstname, lastname, birth) VALUES (?, ?, ?)";
-    private final String insertActors = "INSERT INTO actors (firstname, lastname, birth) VALUES (?, ?, ?)";
-    private final String insertMovieDirectors = "INSERT INTO moviedirectors (movieid, directorid) VALUES (?, ?)";
-    private final String insertMovieGenres = "INSERT INTO moviegenres (movieid, genreid) VALUES (?, ?)";
-    private final String insertMovieActors = "INSERT INTO movieactors (movieid, actorid) VALUES (?, ?)";
-
-    private  PreparedStatement preparedStatement;
-    private final PreparedStatement insertMovieStat;
-    private final PreparedStatement insertActorsStat;
-    private final PreparedStatement insertDirectorsStat;
-    private final PreparedStatement insertMovieGenresStat;
-    private final PreparedStatement insertMovieActorsStat;
-    private final PreparedStatement insertMovieDirectorsStat;
+    public class Inserts {
 
 
-    public Inserts (String url) throws ClassNotFoundException, SQLException {
-        Class.forName("org.postgresql.Driver");
-        connection = DriverManager.getConnection(url ,"postgres", "754yrz2n");
+        private final Connection connection;
 
-        insertMovieStat = connection.prepareStatement(insertMovie);
-        insertActorsStat = connection.prepareStatement(insertActors);
-        insertDirectorsStat = connection.prepareStatement(insertDirectors);
-        insertMovieGenresStat = connection.prepareStatement(insertMovieGenres);
-        insertMovieActorsStat = connection.prepareStatement(insertMovieActors);
-        insertMovieDirectorsStat = connection.prepareStatement(insertMovieDirectors);
-    }
+        private final String insertMovie = "INSERT INTO movie (name, releaseyear, rating, movielength, description) VALUES (?, ?, ?, ?, ?)";
+        private final String insertPeople = "INSERT INTO people (firstname, lastname, birth) VALUES (?, ?, ?)";
 
+        private final String insertMovieGenres = "INSERT INTO moviegenres (movieid, genreid) VALUES (?, ?)";
+        private final String insertMoviePeople = "INSERT INTO moviepeople (movieid, peopleid) VALUES (?, ?)";
+        private final String insertMovieAwards = "INSERT INTO movieawards (movieid, awardid) VALUES (?, ?)";
+        private final String insertPeopleProfession = "INSERT INTO peopleprofession (peopleid, professionid) VALUES (?, ?)";
+        private final String insertPeopleAwards = "INSERT INTO peopleawards (peopleid, awardsid) VALUES (?, ?)";
+
+        private  PreparedStatement preparedStatement;
+        private final PreparedStatement insertMovieStat;
+        private final PreparedStatement insertPeopleStat;
+        private final PreparedStatement insertMovieGenresStat;
+        private final PreparedStatement insertMoviePeopleStat;
+        private final PreparedStatement insertMovieAwardsStat;
+        private final PreparedStatement insertPeopleProfessionStat;
+        private final PreparedStatement insertPeopleAwardsStat;
+
+        public Inserts (String url) throws ClassNotFoundException, SQLException {
+            Class.forName("org.postgresql.Driver");
+            connection = DriverManager.getConnection(url ,"postgres", "754yrz2n");
+
+            insertMovieStat = connection.prepareStatement(insertMovie);
+            insertPeopleStat = connection.prepareStatement(insertPeople);
+
+            insertMovieGenresStat = connection.prepareStatement(insertMovieGenres);
+            insertMoviePeopleStat = connection.prepareStatement(insertMoviePeople);
+            insertMovieAwardsStat = connection.prepareStatement(insertMovieAwards);
+            insertPeopleProfessionStat = connection.prepareStatement(insertPeopleProfession);
+            insertPeopleAwardsStat = connection.prepareStatement(insertPeopleAwards);
+
+        }
     public boolean insertMovie(String name, int year, double rating, int length, String description) {
         try {
             insertMovieStat.setString(1, name);
@@ -50,16 +55,12 @@ public class Inserts {
     }
 
 
-    public boolean insertPeople(String firstName, String lastName, Date birth, String str) {
-        if (str.equals("Actors"))
-            preparedStatement = insertActorsStat;
-        else preparedStatement = insertDirectorsStat;
-
+    public boolean insertPeople(String firstName, String lastName, Date birth) {
         try {
-            preparedStatement.setString(1, firstName);
-            preparedStatement.setString(2, lastName);
-            preparedStatement.setDate(3, birth);
-            preparedStatement.execute();
+            insertPeopleStat.setString(1, firstName);
+            insertPeopleStat.setString(2, lastName);
+            insertPeopleStat.setDate(3, birth);
+            insertPeopleStat.execute();
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
@@ -69,14 +70,21 @@ public class Inserts {
 
     public boolean insert_many2many(long movieID, long secondID, String str){
 
-        if (str.equals("Actors"))
-            preparedStatement = insertMovieActorsStat;
+        if (str.equals("People"))
+            preparedStatement = insertMoviePeopleStat;
 
-        if (str.equals("Directors"))
-            preparedStatement = insertMovieDirectorsStat;
+        if (str.equals("Awards"))
+            preparedStatement = insertMovieAwardsStat;
+
+        if (str.equals("Profession"))
+            preparedStatement = insertPeopleProfessionStat;
 
         if (str.equals("Genres"))
             preparedStatement = insertMovieGenresStat;
+
+        if (str.equals("PA"))
+            preparedStatement = insertPeopleAwardsStat;
+
 
         try {
             preparedStatement.setLong(1, movieID);

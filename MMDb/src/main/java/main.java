@@ -8,14 +8,9 @@ public class main {
         Inserts inserts = new Inserts(url);
         Generator generator = new Generator(inserts);
 
-//        generator.fillMovie(100);
-//
-//        generator.fillPeople(100, "Actors");
-//        generator.fillPeople(100, "Directors");
-//
-//        generator.fill_many2many(200, "Genres");
-        generator.fill_many2many(20, "Actors");
-//        generator.fill_many2many(150, "Directors");
+
+        generator.fill_many2many(100, "PA");
+
     }
 }
 
