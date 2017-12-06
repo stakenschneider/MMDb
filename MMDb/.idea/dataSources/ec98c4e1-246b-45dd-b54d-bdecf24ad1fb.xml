@@ -7,290 +7,150 @@
       <Current>1</Current>
       <Visible>1</Visible>
     </database>
-    <schema id="3" parent="2" name="public">
+    <database id="3" parent="1" name="timur">
+      <ObjectId>33928</ObjectId>
+    </database>
+    <database id="4" parent="1" name="ma">
+      <ObjectId>33930</ObjectId>
+    </database>
+    <schema id="5" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-12-06.01:57:30.752</IntrospectionTimestamp>
-      <IntrospectionStateNumber>6728</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-12-06.21:47:35.845</IntrospectionTimestamp>
+      <IntrospectionStateNumber>7192</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
-    <schema id="4" parent="2" name="pg_catalog">
+    <schema id="6" parent="2" name="pg_catalog">
       <ObjectId>11</ObjectId>
     </schema>
-    <schema id="5" parent="2" name="pg_toast">
+    <schema id="7" parent="2" name="pg_toast">
       <ObjectId>99</ObjectId>
     </schema>
-    <schema id="6" parent="2" name="pg_temp_1">
+    <schema id="8" parent="2" name="pg_temp_1">
       <ObjectId>11736</ObjectId>
     </schema>
-    <schema id="7" parent="2" name="pg_toast_temp_1">
+    <schema id="9" parent="2" name="pg_toast_temp_1">
       <ObjectId>11737</ObjectId>
     </schema>
-    <schema id="8" parent="2" name="information_schema">
+    <schema id="10" parent="2" name="information_schema">
       <ObjectId>12965</ObjectId>
     </schema>
-    <sequence id="9" parent="3" name="peopleawards_awardsid_seq">
-      <ObjectId>33725</ObjectId>
-      <StateNumber>6727</StateNumber>
+    <schema id="11" parent="2" name="timur">
+      <ObjectId>33931</ObjectId>
+    </schema>
+    <sequence id="12" parent="5" name="moviepeople_awardid_seq">
+      <ObjectId>33910</ObjectId>
+      <StateNumber>7181</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="10" parent="3" name="peopleawards_peopleawardsid_seq">
-      <ObjectId>33721</ObjectId>
-      <StateNumber>6727</StateNumber>
+    <sequence id="13" parent="5" name="moviepeople_professionid_seq">
+      <ObjectId>33897</ObjectId>
+      <StateNumber>7177</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="11" parent="3" name="peopleawards_peopleid_seq">
-      <ObjectId>33723</ObjectId>
-      <StateNumber>6727</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="12" parent="3" name="awards_awardsid_seq">
+    <sequence id="14" parent="5" name="awards_awardsid_seq">
       <ObjectId>33566</ObjectId>
       <StateNumber>6581</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="13" parent="3" name="course_course_id_seq">
-      <ObjectId>33417</ObjectId>
-      <StateNumber>4557</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="14" parent="3" name="genres_genreid_seq">
+    <sequence id="15" parent="5" name="genres_genreid_seq">
       <ObjectId>16435</ObjectId>
       <StateNumber>574</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="15" parent="3" name="learner_course_course_id_seq">
-      <ObjectId>33473</ObjectId>
-      <StateNumber>4579</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="16" parent="3" name="learner_course_learner_course_id_seq">
-      <ObjectId>33469</ObjectId>
-      <StateNumber>4579</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="17" parent="3" name="learner_course_learner_id_seq">
-      <ObjectId>33471</ObjectId>
-      <StateNumber>4579</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="18" parent="3" name="learner_learner_id_seq">
-      <ObjectId>33451</ObjectId>
-      <StateNumber>4568</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="19" parent="3" name="lessons_course_course_id_seq">
-      <ObjectId>33536</ObjectId>
-      <StateNumber>5204</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="20" parent="3" name="lessons_course_lessons_course_id_seq">
-      <ObjectId>33532</ObjectId>
-      <StateNumber>5204</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="21" parent="3" name="lessons_course_lessons_id_seq">
-      <ObjectId>33534</ObjectId>
-      <StateNumber>5204</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="22" parent="3" name="lessons_lessons_id_seq">
-      <ObjectId>33523</ObjectId>
-      <StateNumber>5202</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="23" parent="3" name="movie_movieid_seq">
+    <sequence id="16" parent="5" name="movie_movieid_seq">
       <ObjectId>24848</ObjectId>
       <StateNumber>749</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="24" parent="3" name="movieawards_awardid_seq">
+    <sequence id="17" parent="5" name="movieawards_awardid_seq">
       <ObjectId>33595</ObjectId>
       <StateNumber>6587</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="25" parent="3" name="movieawards_movieawardsid_seq">
+    <sequence id="18" parent="5" name="movieawards_movieawardsid_seq">
       <ObjectId>33591</ObjectId>
       <StateNumber>6587</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="26" parent="3" name="movieawards_movieid_seq">
+    <sequence id="19" parent="5" name="movieawards_movieid_seq">
       <ObjectId>33593</ObjectId>
       <StateNumber>6587</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="27" parent="3" name="moviegenres_genreid_seq">
+    <sequence id="20" parent="5" name="moviegenres_genreid_seq">
       <ObjectId>24968</ObjectId>
       <StateNumber>878</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="28" parent="3" name="moviegenres_moviegenres_seq">
+    <sequence id="21" parent="5" name="moviegenres_moviegenres_seq">
       <ObjectId>24964</ObjectId>
       <StateNumber>878</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="29" parent="3" name="moviegenres_movieid_seq">
+    <sequence id="22" parent="5" name="moviegenres_movieid_seq">
       <ObjectId>24966</ObjectId>
       <StateNumber>878</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="30" parent="3" name="moviepeople_movieid_seq">
+    <sequence id="23" parent="5" name="moviepeople_movieid_seq">
       <ObjectId>33578</ObjectId>
       <StateNumber>6585</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="31" parent="3" name="moviepeople_moviepeopleid_seq">
+    <sequence id="24" parent="5" name="moviepeople_moviepeopleid_seq">
       <ObjectId>33576</ObjectId>
       <StateNumber>6585</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="32" parent="3" name="moviepeople_peopleid_seq">
+    <sequence id="25" parent="5" name="moviepeople_peopleid_seq">
       <ObjectId>33580</ObjectId>
       <StateNumber>6585</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="33" parent="3" name="people_peopleid_seq">
+    <sequence id="26" parent="5" name="people_peopleid_seq">
       <ObjectId>33557</ObjectId>
       <StateNumber>6565</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="34" parent="3" name="peopleprofession_peopleid_seq">
-      <ObjectId>33698</ObjectId>
-      <StateNumber>6623</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="35" parent="3" name="peopleprofession_peopleprofessionid_seq">
-      <ObjectId>33696</ObjectId>
-      <StateNumber>6623</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="36" parent="3" name="peopleprofession_professionid_seq">
-      <ObjectId>33700</ObjectId>
-      <StateNumber>6623</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="37" parent="3" name="profession_professionid_seq">
+    <sequence id="27" parent="5" name="profession_professionid_seq">
       <ObjectId>33645</ObjectId>
       <StateNumber>6605</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="38" parent="3" name="teacher_course_course_id_seq">
-      <ObjectId>33430</ObjectId>
-      <StateNumber>4559</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="39" parent="3" name="teacher_course_teacher_course_id_seq">
-      <ObjectId>33426</ObjectId>
-      <StateNumber>4559</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="40" parent="3" name="teacher_course_teacher_id_seq">
-      <ObjectId>33428</ObjectId>
-      <StateNumber>4559</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="41" parent="3" name="teacher_teacher_id_seq">
-      <ObjectId>33408</ObjectId>
-      <StateNumber>4553</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="42" parent="3" name="theme_course_course_id_seq">
-      <ObjectId>33498</ObjectId>
-      <StateNumber>4581</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="43" parent="3" name="theme_course_theme_course_id_seq">
-      <ObjectId>33494</ObjectId>
-      <StateNumber>4581</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="44" parent="3" name="theme_course_theme_id_seq">
-      <ObjectId>33496</ObjectId>
-      <StateNumber>4581</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <sequence id="45" parent="3" name="theme_theme_id_seq">
-      <ObjectId>33460</ObjectId>
-      <StateNumber>4570</StateNumber>
-      <BelongsToColumn>1</BelongsToColumn>
-    </sequence>
-    <table id="46" parent="3" name="awards">
+    <table id="28" parent="5" name="awards">
       <ObjectId>33568</ObjectId>
-      <StateNumber>6727</StateNumber>
+      <StateNumber>7192</StateNumber>
     </table>
-    <table id="47" parent="3" name="course">
-      <ObjectId>33419</ObjectId>
-      <StateNumber>5207</StateNumber>
-    </table>
-    <table id="48" parent="3" name="genres">
+    <table id="29" parent="5" name="genres">
       <ObjectId>16437</ObjectId>
       <StateNumber>1335</StateNumber>
     </table>
-    <table id="49" parent="3" name="learner">
-      <ObjectId>33453</ObjectId>
-      <StateNumber>4579</StateNumber>
-    </table>
-    <table id="50" parent="3" name="learner_course">
-      <ObjectId>33475</ObjectId>
-      <StateNumber>4579</StateNumber>
-    </table>
-    <table id="51" parent="3" name="lessons">
-      <ObjectId>33525</ObjectId>
-      <StateNumber>5206</StateNumber>
-    </table>
-    <table id="52" parent="3" name="lessons_course">
-      <ObjectId>33538</ObjectId>
-      <StateNumber>5207</StateNumber>
-    </table>
-    <table id="53" parent="3" name="movie">
+    <table id="30" parent="5" name="movie">
       <ObjectId>24839</ObjectId>
-      <StateNumber>6620</StateNumber>
+      <StateNumber>7171</StateNumber>
     </table>
-    <table id="54" parent="3" name="movieawards">
+    <table id="31" parent="5" name="movieawards">
       <ObjectId>33597</ObjectId>
       <StateNumber>6593</StateNumber>
     </table>
-    <table id="55" parent="3" name="moviegenres">
+    <table id="32" parent="5" name="moviegenres">
       <ObjectId>24970</ObjectId>
       <StateNumber>1343</StateNumber>
     </table>
-    <table id="56" parent="3" name="moviepeople">
+    <table id="33" parent="5" name="moviepeople">
       <ObjectId>33582</ObjectId>
-      <StateNumber>6591</StateNumber>
+      <StateNumber>7192</StateNumber>
     </table>
-    <table id="57" parent="3" name="people">
+    <table id="34" parent="5" name="people">
       <ObjectId>33559</ObjectId>
       <StateNumber>6727</StateNumber>
     </table>
-    <table id="58" parent="3" name="peopleawards">
-      <ObjectId>33727</ObjectId>
-      <StateNumber>6727</StateNumber>
-    </table>
-    <table id="59" parent="3" name="peopleprofession">
-      <ObjectId>33702</ObjectId>
-      <StateNumber>6623</StateNumber>
-    </table>
-    <table id="60" parent="3" name="profession">
+    <table id="35" parent="5" name="profession">
       <ObjectId>33647</ObjectId>
-      <StateNumber>6623</StateNumber>
+      <StateNumber>7178</StateNumber>
     </table>
-    <table id="61" parent="3" name="teacher">
-      <ObjectId>33410</ObjectId>
-      <StateNumber>4578</StateNumber>
-    </table>
-    <table id="62" parent="3" name="teacher_course">
-      <ObjectId>33432</ObjectId>
-      <StateNumber>4559</StateNumber>
-    </table>
-    <table id="63" parent="3" name="theme">
-      <ObjectId>33462</ObjectId>
-      <StateNumber>4581</StateNumber>
-    </table>
-    <table id="64" parent="3" name="theme_course">
-      <ObjectId>33500</ObjectId>
-      <StateNumber>4581</StateNumber>
-    </table>
-    <column id="65" parent="46" name="awardsid">
+    <column id="36" parent="28" name="awardsid">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -298,80 +158,34 @@
       <SequenceName>awards_awardsid_seq</SequenceName>
       <DefaultExpression>nextval(&apos;awards_awardsid_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="66" parent="46" name="name">
+    <column id="37" parent="28" name="name">
       <Position>2</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>6581</StateNumber>
     </column>
-    <index id="67" parent="46" name="awards_awardsid_uindex">
+    <index id="38" parent="28" name="awards_awardsid_uindex">
       <ObjectId>33574</ObjectId>
       <ColNames>awardsid</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="68" parent="46" name="awards_pkey">
+    <index id="39" parent="28" name="awards_pkey">
       <ObjectId>33572</ObjectId>
       <ColNames>awardsid</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="69" parent="46" name="awards_name_uindex">
+    <index id="40" parent="28" name="awards_name_uindex">
       <ObjectId>33575</ObjectId>
       <ColNames>name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="70" parent="46" name="awards_pkey">
+    <key id="41" parent="28" name="awards_pkey">
       <ObjectId>33573</ObjectId>
       <ColNames>awardsid</ColNames>
       <UnderlyingIndexName>awards_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="71" parent="47" name="course_id">
-      <Position>1</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4557</StateNumber>
-      <SequenceName>course_course_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;course_course_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="72" parent="47" name="name">
-      <Position>2</Position>
-      <DataType>varchar(100)|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4557</StateNumber>
-    </column>
-    <column id="73" parent="47" name="price">
-      <Position>3</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4573</StateNumber>
-    </column>
-    <column id="74" parent="47" name="start_date">
-      <Position>4</Position>
-      <DataType>date|0</DataType>
-      <StateNumber>4574</StateNumber>
-    </column>
-    <column id="75" parent="47" name="description">
-      <Position>5</Position>
-      <DataType>varchar(200)|0</DataType>
-      <StateNumber>4575</StateNumber>
-    </column>
-    <index id="76" parent="47" name="course_course_id_uindex">
-      <ObjectId>33425</ObjectId>
-      <ColNames>course_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="77" parent="47" name="course_pkey">
-      <ObjectId>33423</ObjectId>
-      <ColNames>course_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="78" parent="47" name="course_pkey">
-      <ObjectId>33424</ObjectId>
-      <ColNames>course_id</ColNames>
-      <UnderlyingIndexName>course_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <column id="79" parent="48" name="genreid">
+    <column id="42" parent="29" name="genreid">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -379,227 +193,34 @@
       <SequenceName>genres_genreid_seq</SequenceName>
       <DefaultExpression>nextval(&apos;genres_genreid_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="80" parent="48" name="genrename">
+    <column id="43" parent="29" name="genrename">
       <Position>2</Position>
       <DataType>varchar(40)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>574</StateNumber>
     </column>
-    <index id="81" parent="48" name="genres_genreid_uindex">
+    <index id="44" parent="29" name="genres_genreid_uindex">
       <ObjectId>16443</ObjectId>
       <ColNames>genreid</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="82" parent="48" name="genres_pkey">
+    <index id="45" parent="29" name="genres_pkey">
       <ObjectId>16441</ObjectId>
       <ColNames>genreid</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="83" parent="48" name="genres_genrename_uindex">
+    <index id="46" parent="29" name="genres_genrename_uindex">
       <ObjectId>16444</ObjectId>
       <ColNames>genrename</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="84" parent="48" name="genres_pkey">
+    <key id="47" parent="29" name="genres_pkey">
       <ObjectId>16442</ObjectId>
       <ColNames>genreid</ColNames>
       <UnderlyingIndexName>genres_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="85" parent="49" name="learner_id">
-      <Position>1</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4568</StateNumber>
-      <SequenceName>learner_learner_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;learner_learner_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="86" parent="49" name="first_name">
-      <Position>2</Position>
-      <DataType>varchar(50)|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4568</StateNumber>
-    </column>
-    <column id="87" parent="49" name="last_name">
-      <Position>3</Position>
-      <DataType>varchar(50)|0</DataType>
-      <StateNumber>4568</StateNumber>
-    </column>
-    <column id="88" parent="49" name="email">
-      <Position>4</Position>
-      <DataType>varchar(50)|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4825</StateNumber>
-    </column>
-    <column id="89" parent="49" name="phone_number">
-      <Position>5</Position>
-      <DataType>varchar(50)|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4826</StateNumber>
-    </column>
-    <index id="90" parent="49" name="learner_learner_id_uindex">
-      <ObjectId>33459</ObjectId>
-      <ColNames>learner_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="91" parent="49" name="learner_pkey">
-      <ObjectId>33457</ObjectId>
-      <ColNames>learner_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="92" parent="49" name="learner_pkey">
-      <ObjectId>33458</ObjectId>
-      <ColNames>learner_id</ColNames>
-      <UnderlyingIndexName>learner_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <column id="93" parent="50" name="learner_course_id">
-      <Position>1</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4579</StateNumber>
-      <SequenceName>learner_course_learner_course_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;learner_course_learner_course_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="94" parent="50" name="learner_id">
-      <Position>2</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4579</StateNumber>
-      <SequenceName>learner_course_learner_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;learner_course_learner_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="95" parent="50" name="course_id">
-      <Position>3</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4579</StateNumber>
-      <SequenceName>learner_course_course_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;learner_course_course_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <index id="96" parent="50" name="learner_course_learner_course_id_uindex">
-      <ObjectId>33493</ObjectId>
-      <ColNames>learner_course_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="97" parent="50" name="learner_course_pkey">
-      <ObjectId>33481</ObjectId>
-      <ColNames>learner_course_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="98" parent="50" name="learner_course_pkey">
-      <ObjectId>33482</ObjectId>
-      <ColNames>learner_course_id</ColNames>
-      <UnderlyingIndexName>learner_course_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="99" parent="50" name="learner_course_learner_learner_id_fk">
-      <ObjectId>33488</ObjectId>
-      <ColNames>learner_id</ColNames>
-      <RefTableId>33453</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>learner</RefTableName>
-      <RefKeyName>learner_pkey</RefKeyName>
-      <RefColNames>learner_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="100" parent="50" name="learner_course_course_course_id_fk">
-      <ObjectId>33483</ObjectId>
-      <ColNames>course_id</ColNames>
-      <RefTableId>33419</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>course</RefTableName>
-      <RefKeyName>course_pkey</RefKeyName>
-      <RefColNames>course_id</RefColNames>
-    </foreign-key>
-    <column id="101" parent="51" name="lessons_id">
-      <Position>1</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>5202</StateNumber>
-      <SequenceName>lessons_lessons_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;lessons_lessons_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="102" parent="51" name="name">
-      <Position>2</Position>
-      <DataType>varchar(100)|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>5202</StateNumber>
-    </column>
-    <index id="103" parent="51" name="lessons_lessons_id_uindex">
-      <ObjectId>33531</ObjectId>
-      <ColNames>lessons_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="104" parent="51" name="lessons_pkey">
-      <ObjectId>33529</ObjectId>
-      <ColNames>lessons_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="105" parent="51" name="lessons_pkey">
-      <ObjectId>33530</ObjectId>
-      <ColNames>lessons_id</ColNames>
-      <UnderlyingIndexName>lessons_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <column id="106" parent="52" name="lessons_course_id">
-      <Position>1</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>5204</StateNumber>
-      <SequenceName>lessons_course_lessons_course_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;lessons_course_lessons_course_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="107" parent="52" name="lessons_id">
-      <Position>2</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>5204</StateNumber>
-      <SequenceName>lessons_course_lessons_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;lessons_course_lessons_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="108" parent="52" name="course_id">
-      <Position>3</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>5204</StateNumber>
-      <SequenceName>lessons_course_course_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;lessons_course_course_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <index id="109" parent="52" name="lessons_course_lessons_course_id_uindex">
-      <ObjectId>33546</ObjectId>
-      <ColNames>lessons_course_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="110" parent="52" name="lessons_course_pkey">
-      <ObjectId>33544</ObjectId>
-      <ColNames>lessons_course_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="111" parent="52" name="lessons_course_pkey">
-      <ObjectId>33545</ObjectId>
-      <ColNames>lessons_course_id</ColNames>
-      <UnderlyingIndexName>lessons_course_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="112" parent="52" name="lessons_course_lessons_lessons_id_fk">
-      <ObjectId>33547</ObjectId>
-      <ColNames>lessons_id</ColNames>
-      <RefTableId>33525</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>lessons</RefTableName>
-      <RefKeyName>lessons_pkey</RefKeyName>
-      <RefColNames>lessons_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="113" parent="52" name="lessons_course_course_course_id_fk">
-      <ObjectId>33552</ObjectId>
-      <ColNames>course_id</ColNames>
-      <RefTableId>33419</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>course</RefTableName>
-      <RefKeyName>course_pkey</RefKeyName>
-      <RefColNames>course_id</RefColNames>
-    </foreign-key>
-    <column id="114" parent="53" name="movieid">
+    <column id="48" parent="30" name="movieid">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -607,44 +228,44 @@
       <SequenceName>movie_movieid_seq</SequenceName>
       <DefaultExpression>nextval(&apos;movie_movieid_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="115" parent="53" name="name">
+    <column id="49" parent="30" name="name">
       <Position>2</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>748</StateNumber>
     </column>
-    <column id="116" parent="53" name="releaseyear">
+    <column id="50" parent="30" name="releaseyear">
       <Position>3</Position>
       <DataType>integer|0</DataType>
       <StateNumber>748</StateNumber>
     </column>
-    <column id="117" parent="53" name="rating">
+    <column id="51" parent="30" name="rating">
       <Position>4</Position>
       <DataType>numeric|0</DataType>
       <StateNumber>748</StateNumber>
     </column>
-    <column id="118" parent="53" name="movielength">
+    <column id="52" parent="30" name="movielength">
       <Position>5</Position>
       <DataType>integer|0</DataType>
       <StateNumber>754</StateNumber>
     </column>
-    <column id="119" parent="53" name="description">
+    <column id="53" parent="30" name="description">
       <Position>6</Position>
       <DataType>varchar(300)|0</DataType>
       <StateNumber>748</StateNumber>
     </column>
-    <index id="120" parent="53" name="movie_pkey">
+    <index id="54" parent="30" name="movie_pkey">
       <ObjectId>24846</ObjectId>
       <ColNames>movieid</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="121" parent="53" name="movie_pkey">
+    <key id="55" parent="30" name="movie_pkey">
       <ObjectId>24847</ObjectId>
       <ColNames>movieid</ColNames>
       <UnderlyingIndexName>movie_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="122" parent="54" name="movieawardsid">
+    <column id="56" parent="31" name="movieawardsid">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -652,7 +273,7 @@
       <SequenceName>movieawards_movieawardsid_seq</SequenceName>
       <DefaultExpression>nextval(&apos;movieawards_movieawardsid_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="123" parent="54" name="movieid">
+    <column id="57" parent="31" name="movieid">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -660,7 +281,7 @@
       <SequenceName>movieawards_movieid_seq</SequenceName>
       <DefaultExpression>nextval(&apos;movieawards_movieid_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="124" parent="54" name="awardid">
+    <column id="58" parent="31" name="awardid">
       <Position>3</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -668,23 +289,23 @@
       <SequenceName>movieawards_awardid_seq</SequenceName>
       <DefaultExpression>nextval(&apos;movieawards_awardid_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <index id="125" parent="54" name="movieawards_movieawardsid_uindex">
+    <index id="59" parent="31" name="movieawards_movieawardsid_uindex">
       <ObjectId>33605</ObjectId>
       <ColNames>movieawardsid</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="126" parent="54" name="movieawards_pkey">
+    <index id="60" parent="31" name="movieawards_pkey">
       <ObjectId>33603</ObjectId>
       <ColNames>movieawardsid</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="127" parent="54" name="movieawards_pkey">
+    <key id="61" parent="31" name="movieawards_pkey">
       <ObjectId>33604</ObjectId>
       <ColNames>movieawardsid</ColNames>
       <UnderlyingIndexName>movieawards_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="128" parent="54" name="movieawards_movie_movieid_fk">
+    <foreign-key id="62" parent="31" name="movieawards_movie_movieid_fk">
       <ObjectId>33622</ObjectId>
       <ColNames>movieid</ColNames>
       <RefTableId>24839</RefTableId>
@@ -693,7 +314,7 @@
       <RefKeyName>movie_pkey</RefKeyName>
       <RefColNames>movieid</RefColNames>
     </foreign-key>
-    <foreign-key id="129" parent="54" name="movieawards_awards_awardsid_fk">
+    <foreign-key id="63" parent="31" name="movieawards_awards_awardsid_fk">
       <ObjectId>33617</ObjectId>
       <ColNames>awardid</ColNames>
       <RefTableId>33568</RefTableId>
@@ -702,7 +323,7 @@
       <RefKeyName>awards_pkey</RefKeyName>
       <RefColNames>awardsid</RefColNames>
     </foreign-key>
-    <column id="130" parent="55" name="moviegenres">
+    <column id="64" parent="32" name="moviegenres">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -710,7 +331,7 @@
       <SequenceName>moviegenres_moviegenres_seq</SequenceName>
       <DefaultExpression>nextval(&apos;moviegenres_moviegenres_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="131" parent="55" name="movieid">
+    <column id="65" parent="32" name="movieid">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -718,7 +339,7 @@
       <SequenceName>moviegenres_movieid_seq</SequenceName>
       <DefaultExpression>nextval(&apos;moviegenres_movieid_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="132" parent="55" name="genreid">
+    <column id="66" parent="32" name="genreid">
       <Position>3</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -726,23 +347,23 @@
       <SequenceName>moviegenres_genreid_seq</SequenceName>
       <DefaultExpression>nextval(&apos;moviegenres_genreid_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <index id="133" parent="55" name="moviegenres_moviegenres_uindex">
+    <index id="67" parent="32" name="moviegenres_moviegenres_uindex">
       <ObjectId>24988</ObjectId>
       <ColNames>moviegenres</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="134" parent="55" name="moviegenres_pkey">
+    <index id="68" parent="32" name="moviegenres_pkey">
       <ObjectId>24976</ObjectId>
       <ColNames>moviegenres</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="135" parent="55" name="moviegenres_pkey">
+    <key id="69" parent="32" name="moviegenres_pkey">
       <ObjectId>24977</ObjectId>
       <ColNames>moviegenres</ColNames>
       <UnderlyingIndexName>moviegenres_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="136" parent="55" name="moviegenres_movie_movieid_fk">
+    <foreign-key id="70" parent="32" name="moviegenres_movie_movieid_fk">
       <ObjectId>25015</ObjectId>
       <ColNames>movieid</ColNames>
       <RefTableId>24839</RefTableId>
@@ -751,7 +372,7 @@
       <RefKeyName>movie_pkey</RefKeyName>
       <RefColNames>movieid</RefColNames>
     </foreign-key>
-    <foreign-key id="137" parent="55" name="moviegenres_genres_genreid_fk">
+    <foreign-key id="71" parent="32" name="moviegenres_genres_genreid_fk">
       <ObjectId>25010</ObjectId>
       <ColNames>genreid</ColNames>
       <RefTableId>16437</RefTableId>
@@ -760,7 +381,7 @@
       <RefKeyName>genres_pkey</RefKeyName>
       <RefColNames>genreid</RefColNames>
     </foreign-key>
-    <column id="138" parent="56" name="moviepeopleid">
+    <column id="72" parent="33" name="moviepeopleid">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -768,7 +389,7 @@
       <SequenceName>moviepeople_moviepeopleid_seq</SequenceName>
       <DefaultExpression>nextval(&apos;moviepeople_moviepeopleid_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="139" parent="56" name="movieid">
+    <column id="73" parent="33" name="movieid">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -776,7 +397,7 @@
       <SequenceName>moviepeople_movieid_seq</SequenceName>
       <DefaultExpression>nextval(&apos;moviepeople_movieid_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="140" parent="56" name="peopleid">
+    <column id="74" parent="33" name="peopleid">
       <Position>3</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -784,23 +405,37 @@
       <SequenceName>moviepeople_peopleid_seq</SequenceName>
       <DefaultExpression>nextval(&apos;moviepeople_peopleid_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <index id="141" parent="56" name="moviepeople_moviepeopleid_uindex">
+    <column id="75" parent="33" name="professionid">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>7177</StateNumber>
+      <SequenceName>moviepeople_professionid_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;moviepeople_professionid_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="76" parent="33" name="awardid">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>7184</StateNumber>
+      <SequenceName>moviepeople_awardid_seq</SequenceName>
+    </column>
+    <index id="77" parent="33" name="moviepeople_moviepeopleid_uindex">
       <ObjectId>33590</ObjectId>
       <ColNames>moviepeopleid</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="142" parent="56" name="moviepeople_pkey">
+    <index id="78" parent="33" name="moviepeople_pkey">
       <ObjectId>33588</ObjectId>
       <ColNames>moviepeopleid</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="143" parent="56" name="moviepeople_pkey">
+    <key id="79" parent="33" name="moviepeople_pkey">
       <ObjectId>33589</ObjectId>
       <ColNames>moviepeopleid</ColNames>
       <UnderlyingIndexName>moviepeople_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="144" parent="56" name="moviepeople_movie_movieid_fk">
+    <foreign-key id="80" parent="33" name="moviepeople_movie_movieid_fk">
       <ObjectId>33612</ObjectId>
       <ColNames>movieid</ColNames>
       <RefTableId>24839</RefTableId>
@@ -809,7 +444,7 @@
       <RefKeyName>movie_pkey</RefKeyName>
       <RefColNames>movieid</RefColNames>
     </foreign-key>
-    <foreign-key id="145" parent="56" name="moviepeople_people_peopleid_fk">
+    <foreign-key id="81" parent="33" name="moviepeople_people_peopleid_fk">
       <ObjectId>33607</ObjectId>
       <ColNames>peopleid</ColNames>
       <RefTableId>33559</RefTableId>
@@ -818,156 +453,8 @@
       <RefKeyName>people_pkey</RefKeyName>
       <RefColNames>peopleid</RefColNames>
     </foreign-key>
-    <column id="146" parent="57" name="peopleid">
-      <Position>1</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>6565</StateNumber>
-      <SequenceName>people_peopleid_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;people_peopleid_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="147" parent="57" name="firstname">
-      <Position>2</Position>
-      <DataType>varchar(50)|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>6565</StateNumber>
-    </column>
-    <column id="148" parent="57" name="lastname">
-      <Position>3</Position>
-      <DataType>varchar(50)|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>6565</StateNumber>
-    </column>
-    <column id="149" parent="57" name="birth">
-      <Position>4</Position>
-      <DataType>date|0</DataType>
-      <StateNumber>6565</StateNumber>
-    </column>
-    <index id="150" parent="57" name="people_peopleid_uindex">
-      <ObjectId>33565</ObjectId>
-      <ColNames>peopleid</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="151" parent="57" name="people_pkey">
-      <ObjectId>33563</ObjectId>
-      <ColNames>peopleid</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="152" parent="57" name="people_pkey">
-      <ObjectId>33564</ObjectId>
-      <ColNames>peopleid</ColNames>
-      <UnderlyingIndexName>people_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <column id="153" parent="58" name="peopleawardsid">
-      <Position>1</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>6727</StateNumber>
-      <SequenceName>peopleawards_peopleawardsid_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;peopleawards_peopleawardsid_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="154" parent="58" name="peopleid">
-      <Position>2</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>6727</StateNumber>
-      <SequenceName>peopleawards_peopleid_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;peopleawards_peopleid_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="155" parent="58" name="awardsid">
-      <Position>3</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>6727</StateNumber>
-      <SequenceName>peopleawards_awardsid_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;peopleawards_awardsid_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <index id="156" parent="58" name="peopleawards_peopleawardsid_uindex">
-      <ObjectId>33745</ObjectId>
-      <ColNames>peopleawardsid</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="157" parent="58" name="peopleawards_pkey">
-      <ObjectId>33733</ObjectId>
-      <ColNames>peopleawardsid</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="158" parent="58" name="peopleawards_pkey">
-      <ObjectId>33734</ObjectId>
-      <ColNames>peopleawardsid</ColNames>
-      <UnderlyingIndexName>peopleawards_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="159" parent="58" name="peopleawards_people_peopleid_fk">
-      <ObjectId>33735</ObjectId>
-      <ColNames>peopleid</ColNames>
-      <RefTableId>33559</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>people</RefTableName>
-      <RefKeyName>people_pkey</RefKeyName>
-      <RefColNames>peopleid</RefColNames>
-    </foreign-key>
-    <foreign-key id="160" parent="58" name="peopleawards_awards_awardsid_fk">
-      <ObjectId>33740</ObjectId>
-      <ColNames>awardsid</ColNames>
-      <RefTableId>33568</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>awards</RefTableName>
-      <RefKeyName>awards_pkey</RefKeyName>
-      <RefColNames>awardsid</RefColNames>
-    </foreign-key>
-    <column id="161" parent="59" name="peopleprofessionid">
-      <Position>1</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>6623</StateNumber>
-      <SequenceName>peopleprofession_peopleprofessionid_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;peopleprofession_peopleprofessionid_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="162" parent="59" name="peopleid">
-      <Position>2</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>6623</StateNumber>
-      <SequenceName>peopleprofession_peopleid_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;peopleprofession_peopleid_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="163" parent="59" name="professionid">
-      <Position>3</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>6623</StateNumber>
-      <SequenceName>peopleprofession_professionid_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;peopleprofession_professionid_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <index id="164" parent="59" name="peopleprofession_peopleprofessionid_uindex">
-      <ObjectId>33720</ObjectId>
-      <ColNames>peopleprofessionid</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="165" parent="59" name="peopleprofession_pkey">
-      <ObjectId>33708</ObjectId>
-      <ColNames>peopleprofessionid</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="166" parent="59" name="peopleprofession_pkey">
-      <ObjectId>33709</ObjectId>
-      <ColNames>peopleprofessionid</ColNames>
-      <UnderlyingIndexName>peopleprofession_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="167" parent="59" name="peopleprofession_people_peopleid_fk">
-      <ObjectId>33710</ObjectId>
-      <ColNames>peopleid</ColNames>
-      <RefTableId>33559</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>people</RefTableName>
-      <RefKeyName>people_pkey</RefKeyName>
-      <RefColNames>peopleid</RefColNames>
-    </foreign-key>
-    <foreign-key id="168" parent="59" name="peopleprofession_profession_professionid_fk">
-      <ObjectId>33715</ObjectId>
+    <foreign-key id="82" parent="33" name="moviepeople_profession_professionid_fk">
+      <ObjectId>33905</ObjectId>
       <ColNames>professionid</ColNames>
       <RefTableId>33647</RefTableId>
       <RefColPositions>1</RefColPositions>
@@ -975,7 +462,57 @@
       <RefKeyName>profession_pkey</RefKeyName>
       <RefColNames>professionid</RefColNames>
     </foreign-key>
-    <column id="169" parent="60" name="professionid">
+    <foreign-key id="83" parent="33" name="moviepeople_awards_awardsid_fk">
+      <ObjectId>33923</ObjectId>
+      <ColNames>awardid</ColNames>
+      <RefTableId>33568</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>awards</RefTableName>
+      <RefKeyName>awards_pkey</RefKeyName>
+      <RefColNames>awardsid</RefColNames>
+    </foreign-key>
+    <column id="84" parent="34" name="peopleid">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>6565</StateNumber>
+      <SequenceName>people_peopleid_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;people_peopleid_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="85" parent="34" name="firstname">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>6565</StateNumber>
+    </column>
+    <column id="86" parent="34" name="lastname">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>6565</StateNumber>
+    </column>
+    <column id="87" parent="34" name="birth">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+      <StateNumber>6565</StateNumber>
+    </column>
+    <index id="88" parent="34" name="people_peopleid_uindex">
+      <ObjectId>33565</ObjectId>
+      <ColNames>peopleid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="89" parent="34" name="people_pkey">
+      <ObjectId>33563</ObjectId>
+      <ColNames>peopleid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="90" parent="34" name="people_pkey">
+      <ObjectId>33564</ObjectId>
+      <ColNames>peopleid</ColNames>
+      <UnderlyingIndexName>people_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="91" parent="35" name="professionid">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -983,223 +520,32 @@
       <SequenceName>profession_professionid_seq</SequenceName>
       <DefaultExpression>nextval(&apos;profession_professionid_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="170" parent="60" name="name">
+    <column id="92" parent="35" name="name">
       <Position>2</Position>
       <DataType>varchar(70)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>6609</StateNumber>
     </column>
-    <index id="171" parent="60" name="profession_pkey">
+    <index id="93" parent="35" name="profession_pkey">
       <ObjectId>33651</ObjectId>
       <ColNames>professionid</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="172" parent="60" name="profession_professionid_uindex">
+    <index id="94" parent="35" name="profession_professionid_uindex">
       <ObjectId>33653</ObjectId>
       <ColNames>professionid</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="173" parent="60" name="profession_name_uindex">
+    <index id="95" parent="35" name="profession_name_uindex">
       <ObjectId>33659</ObjectId>
       <ColNames>name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="174" parent="60" name="profession_pkey">
+    <key id="96" parent="35" name="profession_pkey">
       <ObjectId>33652</ObjectId>
       <ColNames>professionid</ColNames>
       <UnderlyingIndexName>profession_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="175" parent="61" name="teacher_id">
-      <Position>1</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4553</StateNumber>
-      <SequenceName>teacher_teacher_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;teacher_teacher_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="176" parent="61" name="first_name">
-      <Position>2</Position>
-      <DataType>varchar(50)|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4553</StateNumber>
-    </column>
-    <column id="177" parent="61" name="last_name">
-      <Position>3</Position>
-      <DataType>varchar(50)|0</DataType>
-      <StateNumber>4576</StateNumber>
-    </column>
-    <column id="178" parent="61" name="email">
-      <Position>4</Position>
-      <DataType>varchar(50)|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4856</StateNumber>
-    </column>
-    <column id="179" parent="61" name="phone_number">
-      <Position>5</Position>
-      <DataType>varchar(50)|0</DataType>
-      <StateNumber>4857</StateNumber>
-    </column>
-    <index id="180" parent="61" name="teacher_pkey">
-      <ObjectId>33414</ObjectId>
-      <ColNames>teacher_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="181" parent="61" name="teacher_teacher_id_uindex">
-      <ObjectId>33416</ObjectId>
-      <ColNames>teacher_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="182" parent="61" name="teacher_pkey">
-      <ObjectId>33415</ObjectId>
-      <ColNames>teacher_id</ColNames>
-      <UnderlyingIndexName>teacher_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <column id="183" parent="62" name="teacher_course_id">
-      <Position>1</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4559</StateNumber>
-      <SequenceName>teacher_course_teacher_course_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;teacher_course_teacher_course_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="184" parent="62" name="teacher_id">
-      <Position>2</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4559</StateNumber>
-      <SequenceName>teacher_course_teacher_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;teacher_course_teacher_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="185" parent="62" name="course_id">
-      <Position>3</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4559</StateNumber>
-      <SequenceName>teacher_course_course_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;teacher_course_course_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <index id="186" parent="62" name="teacher_course_pkey">
-      <ObjectId>33438</ObjectId>
-      <ColNames>teacher_course_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="187" parent="62" name="teacher_course_teacher_course_id_uindex">
-      <ObjectId>33450</ObjectId>
-      <ColNames>teacher_course_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="188" parent="62" name="teacher_course_pkey">
-      <ObjectId>33439</ObjectId>
-      <ColNames>teacher_course_id</ColNames>
-      <UnderlyingIndexName>teacher_course_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="189" parent="62" name="teacher_course_teacher_teacher_id_fk">
-      <ObjectId>33440</ObjectId>
-      <ColNames>teacher_id</ColNames>
-      <RefTableId>33410</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>teacher</RefTableName>
-      <RefKeyName>teacher_pkey</RefKeyName>
-      <RefColNames>teacher_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="190" parent="62" name="teacher_course_course_course_id_fk">
-      <ObjectId>33445</ObjectId>
-      <ColNames>course_id</ColNames>
-      <RefTableId>33419</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>course</RefTableName>
-      <RefKeyName>course_pkey</RefKeyName>
-      <RefColNames>course_id</RefColNames>
-    </foreign-key>
-    <column id="191" parent="63" name="theme_id">
-      <Position>1</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4570</StateNumber>
-      <SequenceName>theme_theme_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;theme_theme_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="192" parent="63" name="name">
-      <Position>2</Position>
-      <DataType>varchar(100)|0</DataType>
-      <StateNumber>4570</StateNumber>
-    </column>
-    <index id="193" parent="63" name="theme_pkey">
-      <ObjectId>33466</ObjectId>
-      <ColNames>theme_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="194" parent="63" name="theme_theme_id_uindex">
-      <ObjectId>33468</ObjectId>
-      <ColNames>theme_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="195" parent="63" name="theme_pkey">
-      <ObjectId>33467</ObjectId>
-      <ColNames>theme_id</ColNames>
-      <UnderlyingIndexName>theme_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <column id="196" parent="64" name="theme_course_id">
-      <Position>1</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4581</StateNumber>
-      <SequenceName>theme_course_theme_course_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;theme_course_theme_course_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="197" parent="64" name="theme_id">
-      <Position>2</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4581</StateNumber>
-      <SequenceName>theme_course_theme_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;theme_course_theme_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <column id="198" parent="64" name="course_id">
-      <Position>3</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>4581</StateNumber>
-      <SequenceName>theme_course_course_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;theme_course_course_id_seq&apos;::regclass)</DefaultExpression>
-    </column>
-    <index id="199" parent="64" name="theme_course_pkey">
-      <ObjectId>33506</ObjectId>
-      <ColNames>theme_course_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="200" parent="64" name="theme_course_theme_course_id_uindex">
-      <ObjectId>33518</ObjectId>
-      <ColNames>theme_course_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="201" parent="64" name="theme_course_pkey">
-      <ObjectId>33507</ObjectId>
-      <ColNames>theme_course_id</ColNames>
-      <UnderlyingIndexName>theme_course_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="202" parent="64" name="theme_course_theme_theme_id_fk">
-      <ObjectId>33508</ObjectId>
-      <ColNames>theme_id</ColNames>
-      <RefTableId>33462</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>theme</RefTableName>
-      <RefKeyName>theme_pkey</RefKeyName>
-      <RefColNames>theme_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="203" parent="64" name="theme_course_course_course_id_fk">
-      <ObjectId>33513</ObjectId>
-      <ColNames>course_id</ColNames>
-      <RefTableId>33419</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>course</RefTableName>
-      <RefKeyName>course_pkey</RefKeyName>
-      <RefColNames>course_id</RefColNames>
-    </foreign-key>
   </database-model>
 </dataSource>

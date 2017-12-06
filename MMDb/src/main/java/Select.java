@@ -6,7 +6,6 @@ public class Select {
 
         private final Connection connection;
 
-        private final String getMovieGenres = "SELECT * from moviegenres WHERE movieid = (?)";
         private final String getMovie = "SELECT * from movie";
         private final String getGenres = "SELECT * from genres";
         private final String getPeople = "SELECT * from people";
@@ -14,25 +13,22 @@ public class Select {
         private final String getAwards = "SELECT * from awards";
 
 
-        private final PreparedStatement getMovieGenresStat;
         private final PreparedStatement getMovieStat;
         private final PreparedStatement getGenresStat;
         private final PreparedStatement getPeopleStat;
-        private final PreparedStatement getProfessionStat;
         private final PreparedStatement getAwardsStat;
+        private final PreparedStatement getProfessionStat;
 
 
         public Select (String url) throws ClassNotFoundException, SQLException {
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection(url ,"postgres", "754yrz2n");
 
-
-            getMovieGenresStat = connection.prepareStatement(getMovieGenres);
             getMovieStat = connection.prepareStatement(getMovie);
             getGenresStat = connection.prepareStatement(getGenres);
             getPeopleStat = connection.prepareStatement(getPeople);
-            getProfessionStat = connection.prepareStatement(getProfession);
             getAwardsStat = connection.prepareStatement(getAwards);
+            getProfessionStat = connection.prepareStatement(getProfession);
         }
 
         public List<Movie> getMovie(){
@@ -122,7 +118,7 @@ public class Select {
 
     public List<Profession> getProfession(){
         try {
-            ResultSet resultSet = getAwardsStat.executeQuery();
+            ResultSet resultSet = getProfessionStat.executeQuery();
             List<Profession> professions = new ArrayList();
 
             while(resultSet.next()) {

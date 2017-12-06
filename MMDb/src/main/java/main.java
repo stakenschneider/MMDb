@@ -9,7 +9,8 @@ public class main {
         Generator generator = new Generator(inserts);
 
 
-        generator.fill_many2many(100, "PA");
+        generator.fillMP(300);
+//        generator.fillMP(100);
 
     }
 }

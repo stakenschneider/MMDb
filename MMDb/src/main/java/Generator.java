@@ -45,19 +45,10 @@ public class Generator {
         return array[randNumber(array.length)];
     }
 
-    private String randomSentence(){
-        String preposition[]={" war"," love"," stars"," cars", " people", " study", " football", " Russia", " church", " beach house", " sleuth", " monsters", " dinosaurs", " nothing", " inexistence", " botheration", " food", " masha", " boy", " dream"};
-        String world = preposition[(int)(random() * preposition.length - 1)];
-        return "that film about" + world;
-    }
-
-
 
     public void fillMovie(int num) {
-
-        for(int i = 0; i < num; i++) {
-            inserts.insertMovie( randString(10),  randomYear(),  randomRating(),  randNumber(300),  randomSentence());
-        }
+        for(int i = 0; i < num; i++)
+            inserts.insertMovie( randString(10),  randomYear(),  randomRating(),  randNumber(300), randString(50));
     }
 
     public void fillPeople(int num) {
@@ -69,69 +60,60 @@ public class Generator {
     }
 
 
-    public void fill_many2many(int number, String str) {
+
+    public void fillMP(int num){
         List<Movie> movies = select.getMovie();
         List<People> people = select.getPeople();
-        List<Genres> genres = select.getGenre();
+        List<Profession> professions = select.getProfession();
         List<Awards> awards = select.getAwards();
 
-        List<Profession> professions = select.getProfession();
+        long[] movieID = new long[movies.size()];
+        long[] peopleID = new long[people.size()];
+        long[] professionID = new long[professions.size()];
+        long[] awardID = new long[awards.size()];
+
+
+        for (int i = 0; i < movies.size(); i++)
+            movieID[i] = movies.get(i).movieID;
+
+        for (int i = 0; i < people.size(); i++)
+            peopleID[i] = people.get(i).ID;
+
+        for (int i = 0; i < professions.size(); i++)
+            professionID[i] = professions.get(i).ID;
+
+        for (int i = 0; i < awards.size(); i++)
+            awardID[i] = awards.get(i).ID;
+
+        for(int i = 0; i < num; i++)
+            inserts.insertMP(this.randNumFromArray(movieID), this.randNumFromArray(peopleID),
+                    this.randNumFromArray(professionID), this.randNumFromArray(awardID));
+
+    }
+
+    public void fill_many2many(int number, String str) {
+        List<Movie> movies = select.getMovie();
+        List<Genres> genres = select.getGenre();
+        List<Awards> awards = select.getAwards();
 
         long[] firstID = new long[movies.size()];
         long[] secondID = new long[0];
 
-
-        if (str.equals("People")) {
-            secondID = new long[people.size()];
-            for (int i = 0; i < people.size(); i++) {
-                secondID[i] = people.get(i).ID;
-            }
-
-            for (int i = 0; i < movies.size(); i++)
-                firstID[i] = movies.get(i).movieID;
-        }
+        for (int i = 0; i < movies.size(); i++)
+            firstID[i] = movies.get(i).movieID;
 
         if (str.equals("Awards")){
             secondID = new long[awards.size()];
-            for (int i = 0; i < awards.size(); i++) {
+            for (int i = 0; i < awards.size(); i++)
                 secondID[i] = awards.get(i).ID;
-            }
-
-            for (int i = 0; i < movies.size(); i++)
-                firstID[i] = movies.get(i).movieID;
-        }
-
-        if (str.equals("Profession")){
-            secondID = new long[professions.size()];
-            for (int i = 0; i < professions.size(); i++) {
-                secondID[i] = professions.get(i).ID;
-            }
-
-            for (int i = 0; i < people.size(); i++) {
-                firstID[i] = people.get(i).ID;
-            }
         }
 
         if (str.equals("Genres")){
             secondID = new long[genres.size()];
-            for (int i = 0; i < genres.size(); i++) {
+            for (int i = 0; i < genres.size(); i++)
                 secondID[i] = genres.get(i).ID;
-            }
-
-            for (int i = 0; i < movies.size(); i++)
-                firstID[i] = movies.get(i).movieID;
         }
 
-        if (str.equals("PA")){
-            secondID = new long[awards.size()];
-            for (int i = 0; i < awards.size(); i++) {
-                secondID[i] = awards.get(i).ID;
-            }
-
-            for (int i = 0; i < people.size(); i++) {
-                firstID[i] = people.get(i).ID;
-            }
-        }
 
         for(int i = 0; i < number; i++) {
             inserts.insert_many2many(this.randNumFromArray(firstID), this.randNumFromArray(secondID), str);

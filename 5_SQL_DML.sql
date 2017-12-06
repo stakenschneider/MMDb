@@ -5,8 +5,6 @@ TABLE people;
 TABLE movieawards;
 TABLE moviepeople;
 TABLE moviegenres;
-TABLE peopleawards;
-TABLE peopleprofession;
 
 --выборка данных из одной таблицы при нескольких условиях, с использованием логических операций, LIKE, BETWEEN, IN
 SELECT firstname FROM people WHERE lastname LIKE 'Deckow';
