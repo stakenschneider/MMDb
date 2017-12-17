@@ -119,7 +119,8 @@ public class Select {
     public List<Profession> getProfession(){
         try {
             ResultSet resultSet = getProfessionStat.executeQuery();
-            List<Profession> professions = new ArrayList();
+
+            ArrayList<Profession> professions = new List();
 
             while(resultSet.next()) {
                 Profession profession = new Profession(
